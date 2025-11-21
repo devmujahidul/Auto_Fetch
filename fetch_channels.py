@@ -55,7 +55,13 @@ def get_auth_token(email, password):
         )
         response.raise_for_status() 
         
-        token = response.json()["content"]["token"]["access_token"]
+        data = response.json()
+        print(f"Login response: {data}")  # Debug: print full response
+        if "content" not in data or "token" not in data["content"]:
+            print(f"Login failed. Full response: {data}")
+            sys.exit(1)
+        
+        token = data["content"]["token"]["access_token"]
         if not token:
             raise ValueError("Login successful but 'access_token' field is missing in the response.")
             
@@ -67,8 +73,10 @@ def get_auth_token(email, password):
         if 'response' in locals() and response is not None:
              print(f"Response content: {response.text[:500]}...")
         sys.exit(1)
-    except ValueError as e:
-        print(f"Login response error: {e}")
+    except (KeyError, ValueError) as e:
+        print(f"Login response parsing error: {e}")
+        if 'response' in locals() and response is not None:
+             print(f"Response content: {response.text[:500]}...")
         sys.exit(1)
 
 

@@ -7,6 +7,21 @@ from dotenv import load_dotenv
 # Load environment variables from .env file if it exists (for local testing)
 load_dotenv()
 
+def get_proxies():
+    """Get proxy configuration from environment variables."""
+    proxy_host = os.environ.get("SOCKS5_PROXY_HOST")
+    proxy_port = os.environ.get("SOCKS5_PROXY_PORT")
+    proxy_user = os.environ.get("SOCKS5_PROXY_USER")
+    proxy_pass = os.environ.get("SOCKS5_PROXY_PASS")
+    
+    if proxy_host and proxy_port:
+        proxy_url = f"socks5://{proxy_user}:{proxy_pass}@{proxy_host}:{proxy_port}" if proxy_user and proxy_pass else f"socks5://{proxy_host}:{proxy_port}"
+        return {
+            'http': proxy_url,
+            'https': proxy_url
+        }
+    return None
+
 # --- Configuration from your 'Ayna OTT.json' file ---
 
 # Endpoints
@@ -45,13 +60,16 @@ def get_auth_token(email, password):
     login_data = LOGIN_BASE_PARAMS.copy()
     login_data.update({"login": email, "password": password})
     
+    proxies = get_proxies()
+    
     print("Attempting to get a new Bearer Token...")
     
     try:
         response = requests.post(
             LOGIN_URL, 
             json=login_data, 
-            headers={"Content-Type": "application/json"}
+            headers={"Content-Type": "application/json"},
+            proxies=proxies
         )
         response.raise_for_status() 
         
@@ -95,9 +113,10 @@ def get_stream_url(token, channel_id):
         "os": "windows",
         "media_id": channel_id
     }
+    proxies = get_proxies()
     
     try:
-        response = requests.get(STREAM_URL, headers=headers, params=params)
+        response = requests.get(STREAM_URL, headers=headers, params=params, proxies=proxies)
         response.raise_for_status()
         stream_data = response.json()
         # Assuming content is a list with one item
@@ -115,9 +134,10 @@ def fetch_and_transform_channels(token):
     print(f"Attempting to fetch channels from: {CHANNELS_URL}")
     
     headers = {"Authorization": f"Bearer {token}"}
+    proxies = get_proxies()
     
     try:
-        response = requests.get(CHANNELS_URL, headers=headers, params=CHANNELS_QUERY_PARAMS)
+        response = requests.get(CHANNELS_URL, headers=headers, params=CHANNELS_QUERY_PARAMS, proxies=proxies)
         response.raise_for_status() 
         raw_data = response.json()
         

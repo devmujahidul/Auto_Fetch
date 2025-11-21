@@ -36,3 +36,11 @@ jobs:
         name: ayna-ott-channels-${{ github.sha }} # Unique name based on commit hash
         path: output.json
         retention-days: 7 # How long to keep the artifact
+
+    - name: 📝 Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add output.json
+        git diff --quiet && git diff --staged --quiet || git commit -m "Update channels data [auto-fetch]"
+        git push

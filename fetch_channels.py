@@ -2,12 +2,17 @@ import requests
 import json
 import os
 import sys
+from dotenv import load_dotenv
+
+# Load environment variables from .env file if it exists (for local testing)
+load_dotenv()
 
 # --- Configuration from your 'Ayna OTT.json' file ---
 
 # Endpoints
 LOGIN_URL = "https://web.aynaott.com/api/authorization/login"
 CHANNELS_URL = "https://web.aynaott.com/api/player/channels"
+STREAM_URL = "https://web.aynaott.com/api/player/streams"
 OUTPUT_FILE_NAME = "output.json"
 
 # Base parameters for the Login request body
@@ -50,7 +55,7 @@ def get_auth_token(email, password):
         )
         response.raise_for_status() 
         
-        token = response.json().get("access_token")
+        token = response.json()["content"]["token"]["access_token"]
         if not token:
             raise ValueError("Login successful but 'access_token' field is missing in the response.")
             
@@ -67,6 +72,36 @@ def get_auth_token(email, password):
         sys.exit(1)
 
 
+def get_stream_url(token, channel_id):
+    """Fetches the stream URL for a given channel ID."""
+    headers = {
+        'Authorization': f'Bearer {token}',
+    }
+    params = {
+        "language": "en",
+        "operator_id": "1fb1b4c7-dbd9-469e-88a2-c207dc195869",
+        "device_id": "89E08DCB2AED39234661607AF770A98E",
+        "density": "1",
+        "client": "browser",
+        "platform": "web",
+        "os": "windows",
+        "media_id": channel_id
+    }
+    
+    try:
+        response = requests.get(STREAM_URL, headers=headers, params=params)
+        response.raise_for_status()
+        stream_data = response.json()
+        # Assuming content is a list with one item
+        if stream_data.get("content") and len(stream_data["content"]) > 0:
+            url = stream_data["content"][0].get("src", {}).get("url", "").strip()
+            return url
+        return ""
+    except requests.exceptions.RequestException as e:
+        print(f"Error fetching stream for channel {channel_id}: {e}")
+        return ""
+
+
 def fetch_and_transform_channels(token):
     """Fetches, transforms, and saves the channel list to output.json."""
     print(f"Attempting to fetch channels from: {CHANNELS_URL}")
@@ -78,8 +113,8 @@ def fetch_and_transform_channels(token):
         response.raise_for_status() 
         raw_data = response.json()
         
-        # Check if the expected 'items' key exists
-        raw_channels = raw_data.get('items', [])
+        # Check if the expected 'content.data' key exists
+        raw_channels = raw_data.get("content", {}).get("data", [])
         
         if not raw_channels:
             print("Warning: Channel list response is empty.")
@@ -89,18 +124,14 @@ def fetch_and_transform_channels(token):
         # --- Data Transformation ---
         transformed_channels = []
         for channel in raw_channels:
-            # Assuming the 'streams' array contains the playback URL
-            # and the first stream is the relevant one.
-            stream_url = channel.get('streams', [{}])[0].get('url', '')
-            
+            channel_id = channel.get('id')
+            stream_url = get_stream_url(token, channel_id) if channel_id else ""
             transformed_channels.append({
-                "id": channel.get('id', 'N/A'),
+                "id": channel_id or 'N/A',
                 "title": channel.get('title', 'N/A'),
-                "logo": channel.get('logo', 'N/A'),
+                "logo": channel.get('image', 'N/A'),
                 "url": stream_url,
-                # Assuming the category title is in 'category_title' or similar field. 
-                # If not, you might need another API call (like Categories) to map the category_id.
-                "category": channel.get('category_title', 'Channels') 
+                "category": 'Channels'  # Default category
             })
         
         final_output = {"channels": transformed_channels}

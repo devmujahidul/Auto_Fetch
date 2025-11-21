@@ -1,0 +1,38 @@
+name: Fetch Ayna OTT Channels
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */2 * * *' # Run every 2 hours
+
+jobs:
+  fetch_channels_job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: ⬇️ Checkout code
+      uses: actions/checkout@v4
+
+    - name: 🐍 Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: 📦 Install dependencies from requirements.txt
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: 🏃 Run channel fetch script with token refresh
+      env:
+        # Load sensitive credentials from GitHub Secrets
+        AYNA_OTT_EMAIL: ${{ secrets.AYNA_OTT_EMAIL }}
+        AYNA_OTT_PASSWORD: ${{ secrets.AYNA_OTT_PASSWORD }}
+      run: python fetch_channels.py
+
+    - name: ⬆️ Upload output.json as an Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: ayna-ott-channels-${{ github.sha }} # Unique name based on commit hash
+        path: output.json
+        retention-days: 7 # How long to keep the artifact

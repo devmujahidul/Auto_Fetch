@@ -38,14 +38,14 @@ LOGIN_BASE_PARAMS = {
     "client": "browser",
     "platform": "web",
     "os": "windows",
-    "device_id": os.environ.get("LOGIN_DEVICE_ID", "740B26C4302E8EB5CA6C2584026D8277") 
+    "device_id": os.environ.get("LOGIN_DEVICE_ID", "21BDE34FC53FD6C549114E67DABAFC79") 
 }
 
 # Channel List Query Parameters
 CHANNELS_QUERY_PARAMS = {
     "language": "en",
     "operator_id": "1fb1b4c7-dbd9-469e-88a2-c207dc195869",
-    "device_id": os.environ.get("CHANNEL_DEVICE_ID", "89E08DCB2AED39234661607AF770A98E"),
+    "device_id": os.environ.get("CHANNEL_DEVICE_ID", "21BDE34FC53FD6C549114E67DABAFC79"),
     "density": 1,
     "client": "browser",
     "platform": "web",
@@ -106,7 +106,7 @@ def get_stream_url(token, channel_id):
     params = {
         "language": "en",
         "operator_id": "1fb1b4c7-dbd9-469e-88a2-c207dc195869",
-        "device_id": "89E08DCB2AED39234661607AF770A98E",
+        "device_id": "21BDE34FC53FD6C549114E67DABAFC79",
         "density": "1",
         "client": "browser",
         "platform": "web",

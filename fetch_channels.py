@@ -212,7 +212,11 @@ def fetch_and_transform_channels(token):
                 "category": 'Channels'  # Default category
             })
         
-        final_output = {"channels": transformed_channels}
+        final_output = {
+            "created_at": datetime.now(timezone(timedelta(hours=6))).isoformat(),
+            "disclaimer": "We do not host or serve any content. All channels and streams listed are publicly available from third-party providers.",
+            "channels": transformed_channels
+        }
 
         # --- Data Saving ---
         with open(OUTPUT_FILE_NAME, "w", encoding="utf-8") as f:

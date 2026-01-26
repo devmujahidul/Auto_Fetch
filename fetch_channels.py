@@ -3,6 +3,7 @@ import json
 import os
 import sys
 from dotenv import load_dotenv
+from datetime import datetime, timezone, timedelta
 
 # Load environment variables from .env file if it exists (for local testing)
 load_dotenv()
@@ -162,7 +163,10 @@ def fetch_and_transform_channels(token):
                 "category": 'Channels'  # Default category
             })
         
-        final_output = {"channels": transformed_channels}
+        final_output = {
+            "channels": transformed_channels,
+            "created_at": datetime.now(timezone(timedelta(hours=6))).isoformat()
+        }
 
         # --- Data Saving ---
         with open(OUTPUT_FILE_NAME, "w") as f:

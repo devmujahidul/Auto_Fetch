@@ -21,6 +21,14 @@ jobs:
       with:
         python-version: '3.x'
 
+    - name: ⚡ Cache pip
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+
     - name: 📦 Install dependencies from requirements.txt
       run: |
         python -m pip install --upgrade pip
@@ -31,7 +39,7 @@ jobs:
         # Load sensitive credentials from GitHub Secrets
         AYNA_OTT_EMAIL: ${{ secrets.AYNA_OTT_EMAIL }}
         AYNA_OTT_PASSWORD: ${{ secrets.AYNA_OTT_PASSWORD }}
-        AYNA_OTT_LOGIN_ID: ${{ secrets.LOGIN_DEVICE_ID }}
+        LOGIN_DEVICE_ID: ${{ secrets.LOGIN_DEVICE_ID }}
         # SOCKS5 Proxy configuration
         SOCKS5_PROXY_HOST: ${{ secrets.SOCKS5_PROXY_HOST }}
         SOCKS5_PROXY_PORT: ${{ secrets.SOCKS5_PROXY_PORT }}

@@ -51,8 +51,9 @@ CHANNELS_QUERY_PARAMS = {
     "client": "browser",
     "platform": "web",
     "os": "windows",
+    # initial pagination values (will be updated when fetching)
     "page": 1,
-    "per_page": 1000,
+    "per_page": 100,
     "category_ids[0]": "1959dec0-6f7b-4adc-9ede-f4d2f111ae3f" 
 }
 
@@ -131,29 +132,77 @@ def get_stream_url(token, channel_id):
 
 
 def fetch_and_transform_channels(token):
-    """Fetches, transforms, and saves the channel list to output.json."""
+    """Fetches (all pages), preserves full channel objects and saves them to output.json.
+
+    The function will fetch all pages from the channels endpoint (robust to
+    different pagination metadata shapes), attach a resolved `url` field for
+    each channel (calling `get_stream_url`) and write the complete list to
+    `output.json`.
+    """
+
     print(f"Attempting to fetch channels from: {CHANNELS_URL}")
-    
     headers = {"Authorization": f"Bearer {token}"}
     proxies = get_proxies()
-    
+
     try:
-        response = requests.get(CHANNELS_URL, headers=headers, params=CHANNELS_QUERY_PARAMS, proxies=proxies)
-        response.raise_for_status() 
-        raw_data = response.json()
-        
-        # Check if the expected 'content.data' key exists
-        raw_channels = raw_data.get("content", {}).get("data", [])
-        
-        if not raw_channels:
+        # --- Fetch all pages robustly ---
+        all_raw_channels = []
+        params = CHANNELS_QUERY_PARAMS.copy()
+        page = 1
+        per_page = int(params.get("per_page", 100))
+
+        while True:
+            params["page"] = page
+            response = requests.get(CHANNELS_URL, headers=headers, params=params, proxies=proxies)
+            response.raise_for_status()
+            data = response.json()
+
+            page_channels = data.get("content", {}).get("data", [])
+            if not page_channels:
+                # nothing on this page — stop
+                break
+
+            all_raw_channels.extend(page_channels)
+
+            # Try to detect pagination metadata in a few common shapes
+            content = data.get("content", {})
+            meta = content.get("meta") or content.get("pagination") or {}
+            current_page = meta.get("current_page") or meta.get("current")
+            last_page = meta.get("last_page") or meta.get("last") or meta.get("total_pages")
+            next_page_url = content.get("next_page_url") or meta.get("next_page_url") or None
+
+            # If explicit last page info is available, use it
+            if current_page is not None and last_page is not None:
+                try:
+                    if int(current_page) >= int(last_page):
+                        break
+                except Exception:
+                    pass
+
+            # If next_page_url is present, continue
+            if next_page_url:
+                page += 1
+                continue
+
+            # Fallback: if number of items returned is less than requested per_page, we've reached the last page
+            if len(page_channels) < per_page:
+                break
+
+            # Otherwise, attempt next page
+            page += 1
+
+        if not all_raw_channels:
             print("Warning: Channel list response is empty.")
-            
-        print(f"✅ Successfully fetched raw channel data. Total channels found: {len(raw_channels)}")
+
+        print(f"✅ Successfully fetched raw channel data. Total channels found: {len(all_raw_channels)}")
 
         # --- Data Transformation ---
         transformed_channels = []
-        for channel in raw_channels:
-            channel_id = channel.get('id')
+        for channel in all_raw_channels:
+            # Preserve the full channel object, but normalize some fields and add 'url'
+            channel_copy = channel.copy() if isinstance(channel, dict) else {"raw": channel}
+
+            channel_id = channel_copy.get("id")
             stream_url = get_stream_url(token, channel_id) if channel_id else ""
             transformed_channels.append({
                 "id": channel_id or 'N/A',
@@ -163,15 +212,12 @@ def fetch_and_transform_channels(token):
                 "category": 'Channels'  # Default category
             })
         
-        final_output = {
-            "channels": transformed_channels,
-            "created_at": datetime.now(timezone(timedelta(hours=6))).isoformat()
-        }
+        final_output = {"channels": transformed_channels}
 
         # --- Data Saving ---
-        with open(OUTPUT_FILE_NAME, "w") as f:
-            json.dump(final_output, f, indent=2)
-            
+        with open(OUTPUT_FILE_NAME, "w", encoding="utf-8") as f:
+            json.dump(final_output, f, indent=2, ensure_ascii=False)
+
         print(f"💾 Successfully saved transformed data to {OUTPUT_FILE_NAME}.")
 
     except requests.exceptions.RequestException as e:

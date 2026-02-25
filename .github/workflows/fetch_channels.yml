@@ -82,7 +82,7 @@ jobs:
       run: |
         missing=0
 
-        for f in output.json original_output.m3u output.m3u; do
+        for f in output.json original_output.m3u output.m3u channel_classifications.json; do
           if [ -f "$f" ]; then
             echo "✅ $f exists - $(wc -c < "$f") bytes"
           else
@@ -111,6 +111,7 @@ jobs:
           output.json
           original_output.m3u
           output.m3u
+          channel_classifications.json
         retention-days: 7
       continue-on-error: true
 
@@ -133,11 +134,12 @@ jobs:
         git config --local user.name "github-actions[bot]"
         
         if git diff --quiet HEAD -- output.json original_output.m3u output.m3u; then
+        if git diff --quiet HEAD -- output.json original_output.m3u output.m3u channel_classifications.json; then
           echo "ℹ️ No changes to outputs to commit"
           echo "changes=false" >> $GITHUB_OUTPUT
         else
           echo "📝 Changes detected, committing..."
-          git add output.json original_output.m3u output.m3u
+          git add output.json original_output.m3u output.m3u channel_classifications.json
           TIMESTAMP=$(date -u +'%Y-%m-%d %H:%M:%S UTC')
           git commit -m "Update channels data [auto-fetch] $TIMESTAMP"
           git push origin HEAD:main 2>&1 || echo "⚠️ Git push encountered an issue (non-blocking)"

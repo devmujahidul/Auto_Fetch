@@ -39,6 +39,7 @@ ALLOWED_GROUPS = [
 ]
 ALLOWED_REGIONS = ["BD", "CA", "IN", "INT", "PK", "QA", "SA", "UK", "US"]
 AI_CACHE_FILE = "ai_classifications.json"
+CLASS_STORE_FILE = "channel_classifications.json"
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-1.5-flash")
 
 def get_proxies():
@@ -350,6 +351,26 @@ def save_ai_cache(cache, path=AI_CACHE_FILE):
         logger.warning(f"Could not write AI cache: {e}")
 
 
+def load_classification_store(path=CLASS_STORE_FILE):
+    if not os.path.exists(path):
+        return {}
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return data if isinstance(data, dict) else {}
+    except Exception as e:
+        logger.warning(f"Could not load classification store: {e}")
+        return {}
+
+
+def save_classification_store(store, path=CLASS_STORE_FILE):
+    try:
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(store, f, indent=2)
+    except Exception as e:
+        logger.warning(f"Could not write classification store: {e}")
+
+
 def ensure_gemini_client():
     api_key = os.environ.get("GOOGLE_API_KEY") or os.environ.get("GEMINI_API_KEY")
     if not api_key:
@@ -373,7 +394,8 @@ def ai_classify_batch(model, channels):
         "Allowed group_title values: " + ", ".join(ALLOWED_GROUPS),
         "Allowed region values: " + ", ".join(ALLOWED_REGIONS),
         "Respond ONLY with minified JSON array matching the order of items: [ {\"group_title\":\"...\",\"region\":\"...\"}, ... ].",
-        "If unsure, choose the closest match; use INT as region fallback.",
+        "Choose the most plausible region from the allowed list; avoid INT unless there is no reasonable country/region signal.",
+        "Hint: Bangla/Bangladesh/Bengali/Bangla TV → BD; Urdu/Pakistan → PK; Hindi/Indian languages → IN; Qatar → QA; Saudi/KSA → SA; UK brands (BBC/Sky) → UK; US brands (CNN/FOX/ABC/NBC/CBS) → US; Canada → CA; International/world/global → INT.",
     ]
 
     for idx, ch in enumerate(channels):
@@ -564,6 +586,8 @@ def fetch_and_transform_channels(token, retry_count=0):
         ai_cache = load_ai_cache()
         ai_cache_changed = False
         ai_model = ensure_gemini_client()
+        class_store = load_classification_store()
+        class_store_changed = False
 
         # --- Data Transformation & Deduplication ---
         seen_ids = {}
@@ -589,12 +613,22 @@ def fetch_and_transform_channels(token, retry_count=0):
             if "image" in channel_copy and "logo" not in channel_copy:
                 channel_copy["logo"] = channel_copy.get("image")
             channel_copy["url"] = stream_url
-            channel_copy["group_title"] = classify_group_title(channel_copy, group_overrides)
-            channel_copy["region"] = classify_region(channel_copy, region_overrides)
+
+            cid = channel_copy.get("id", "")
+
+            # Apply stored classification if available
+            stored = class_store.get(cid) if cid else None
+            if stored:
+                g_stored = normalize_group(stored.get("group_title"))
+                r_stored = normalize_region(stored.get("region"))
+                channel_copy["group_title"] = g_stored or classify_group_title(channel_copy, group_overrides)
+                channel_copy["region"] = r_stored or classify_region(channel_copy, region_overrides)
+            else:
+                channel_copy["group_title"] = classify_group_title(channel_copy, group_overrides)
+                channel_copy["region"] = classify_region(channel_copy, region_overrides)
 
             # Prepare for optional AI batch refinement
-            cid = channel_copy.get("id", "")
-            if ai_model and cid and cid not in ai_cache:
+            if ai_model and cid and cid not in ai_cache and cid not in class_store:
                 # collect for batch call
                 pass
 
@@ -602,7 +636,7 @@ def fetch_and_transform_channels(token, retry_count=0):
 
         # AI batch refinement (single batch to reduce latency)
         if ai_model:
-            to_classify = [ch for ch in transformed_channels if ch.get("id") and ch.get("id") not in ai_cache]
+            to_classify = [ch for ch in transformed_channels if ch.get("id") and ch.get("id") not in ai_cache and ch.get("id") not in class_store]
             if to_classify:
                 ai_results = ai_classify_batch(ai_model, to_classify)
                 if ai_results:
@@ -620,6 +654,12 @@ def fetch_and_transform_channels(token, retry_count=0):
                                 ch["region"] = r
                             ai_cache[cid] = res
                             ai_cache_changed = True
+                            class_store[cid] = {
+                                "title": ch.get("title", ""),
+                                "group_title": g or ch.get("group_title"),
+                                "region": r or ch.get("region"),
+                            }
+                            class_store_changed = True
 
         final_output = {
             "created_at": datetime.now(timezone(timedelta(hours=6))).isoformat(),
@@ -638,6 +678,8 @@ def fetch_and_transform_channels(token, retry_count=0):
 
         if ai_cache_changed:
             save_ai_cache(ai_cache)
+        if class_store_changed:
+            save_classification_store(class_store)
 
         # --- M3U Generation ---
         build_m3u(transformed_channels, "original_output.m3u", lambda ch: ch.get("url", ""), group_overrides, region_overrides)

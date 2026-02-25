@@ -82,6 +82,12 @@ jobs:
       run: |
         missing=0
 
+        # Ensure classification store exists; create empty if missing to avoid failure on first run
+        if [ ! -f "channel_classifications.json" ]; then
+          echo "{}" > channel_classifications.json
+          echo "ℹ️ channel_classifications.json was missing; created empty store"
+        fi
+
         for f in output.json original_output.m3u output.m3u channel_classifications.json; do
           if [ -f "$f" ]; then
             echo "✅ $f exists - $(wc -c < "$f") bytes"
@@ -123,6 +129,7 @@ jobs:
           output.json
           original_output.m3u
           output.m3u
+          channel_classifications.json
         retention-days: 7
       continue-on-error: true
 
@@ -133,7 +140,6 @@ jobs:
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         
-        if git diff --quiet HEAD -- output.json original_output.m3u output.m3u; then
         if git diff --quiet HEAD -- output.json original_output.m3u output.m3u channel_classifications.json; then
           echo "ℹ️ No changes to outputs to commit"
           echo "changes=false" >> $GITHUB_OUTPUT

@@ -48,6 +48,10 @@ STREAM_URL = "https://web.aynaott.com/api/player/streams"
 OUTPUT_FILE_NAME = "output.json"
 
 # Base parameters for the Login request body
+DEVICE_ID = os.environ.get("LOGIN_DEVICE_ID")
+LOGIN_DEVICE_ID = DEVICE_ID
+CHANNEL_DEVICE_ID = DEVICE_ID
+
 LOGIN_BASE_PARAMS = {
     "language": "en",
     "operator_id": "1fb1b4c7-dbd9-469e-88a2-c207dc195869",
@@ -55,14 +59,14 @@ LOGIN_BASE_PARAMS = {
     "client": "browser",
     "platform": "web",
     "os": "windows",
-    "device_id": os.environ.get("LOGIN_DEVICE_ID", "21BDE34FC53FD6C549114E67DABAFC79") 
+    "device_id": LOGIN_DEVICE_ID
 }
 
 # Channel List Query Parameters
 CHANNELS_QUERY_PARAMS = {
     "language": "en",
     "operator_id": "1fb1b4c7-dbd9-469e-88a2-c207dc195869",
-    "device_id": os.environ.get("CHANNEL_DEVICE_ID", "21BDE34FC53FD6C549114E67DABAFC79"),
+    "device_id": CHANNEL_DEVICE_ID,
     "density": 1,
     "client": "browser",
     "platform": "web",
@@ -141,7 +145,7 @@ def get_stream_url(token, channel_id, retry_count=0):
     params = {
         "language": "en",
         "operator_id": "1fb1b4c7-dbd9-469e-88a2-c207dc195869",
-        "device_id": "21BDE34FC53FD6C549114E67DABAFC79",
+        "device_id": CHANNEL_DEVICE_ID,
         "density": "1",
         "client": "browser",
         "platform": "web",
@@ -206,6 +210,14 @@ def fetch_and_transform_channels(token, retry_count=0):
     logger.info(f"Attempting to fetch channels from: {CHANNELS_URL}")
     headers = {"Authorization": f"Bearer {token}"}
     proxies = get_proxies()
+
+    # Always start from a clean slate so we never mix old and new data
+    if os.path.exists(OUTPUT_FILE_NAME):
+        try:
+            os.remove(OUTPUT_FILE_NAME)
+            logger.info(f"Removed existing {OUTPUT_FILE_NAME} to write fresh data")
+        except OSError as e:
+            logger.warning(f"Could not remove existing {OUTPUT_FILE_NAME}: {e}")
 
     try:
         # --- Fetch all pages robustly ---
@@ -344,6 +356,10 @@ if __name__ == "__main__":
         
         LOGIN_EMAIL = os.environ.get("AYNA_OTT_EMAIL")
         PASSWORD = os.environ.get("AYNA_OTT_PASSWORD")
+        if not LOGIN_DEVICE_ID:
+            logger.critical("Error: LOGIN_DEVICE_ID environment variable not set.")
+            write_status_file("failed", "Missing device id env var")
+            sys.exit(1)
         
         if not LOGIN_EMAIL or not PASSWORD:
             logger.critical("Error: AYNA_OTT_EMAIL or AYNA_OTT_PASSWORD environment variables not set.")

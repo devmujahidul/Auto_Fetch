@@ -48,6 +48,7 @@ jobs:
         AYNA_OTT_PASSWORD: ${{ secrets.AYNA_OTT_PASSWORD }}
         LOGIN_DEVICE_ID: ${{ secrets.LOGIN_DEVICE_ID }}
         PLAYER_BASE: ${{ secrets.PLAYER_BASE }}
+        GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
         SOCKS5_PROXY_HOST: ${{ secrets.SOCKS5_PROXY_HOST }}
         SOCKS5_PROXY_PORT: ${{ secrets.SOCKS5_PROXY_PORT }}
         SOCKS5_PROXY_USER: ${{ secrets.SOCKS5_PROXY_USER }}

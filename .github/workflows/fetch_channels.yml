@@ -130,13 +130,15 @@ jobs:
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        
-        if git diff --quiet HEAD -- output.json original_output.m3u output.m3u; then
+
+        # Stage outputs even if they are new/untracked
+        git add output.json original_output.m3u output.m3u || true
+
+        if git diff --cached --quiet; then
           echo "ℹ️ No changes to outputs to commit"
           echo "changes=false" >> $GITHUB_OUTPUT
         else
           echo "📝 Changes detected, committing..."
-          git add output.json original_output.m3u output.m3u
           TIMESTAMP=$(date -u +'%Y-%m-%d %H:%M:%S UTC')
           git commit -m "Update channels data [auto-fetch] $TIMESTAMP"
           git push origin HEAD:main

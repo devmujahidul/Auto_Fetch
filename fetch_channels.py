@@ -46,6 +46,7 @@ LOGIN_URL = "https://web.aynaott.com/api/authorization/login"
 CHANNELS_URL = "https://web.aynaott.com/api/player/channels"
 STREAM_URL = "https://web.aynaott.com/api/player/streams"
 OUTPUT_FILE_NAME = "output.json"
+PLAYER_BASE = os.environ.get("PLAYER_BASE", "https://streamer.bdstream.site")
 
 # Base parameters for the Login request body
 DEVICE_ID = os.environ.get("LOGIN_DEVICE_ID")
@@ -204,6 +205,47 @@ def fetch_stream_urls_batch(token, channels):
     return results
 
 
+def _pick_first_non_empty(value):
+    if value is None:
+        return ""
+    if isinstance(value, list):
+        for v in value:
+            if v:
+                return str(v)
+        return ""
+    return str(value)
+
+
+def build_m3u(channels, file_name, url_builder):
+    lines = ["#EXTM3U", ""]
+
+    for channel in channels:
+        url = url_builder(channel).strip()
+        if not url:
+            continue
+
+        tvg_id = channel.get("id", "").strip()
+        tvg_name = channel.get("title", "").strip()
+        tvg_logo = channel.get("logo") or channel.get("image") or ""
+
+        group_title = _pick_first_non_empty(channel.get("category") or channel.get("categories") or channel.get("genre") or channel.get("genres") or channel.get("group") or channel.get("group_title")) or "Unknown"
+        region = _pick_first_non_empty(channel.get("region") or channel.get("country") or channel.get("country_code") or channel.get("countryCode")) or "Unknown"
+
+        extinf = (
+            f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{tvg_name}" tvg-logo="{tvg_logo}" '
+            f'group-title="{group_title}" region="{region}", {tvg_name}'
+        )
+        lines.append(extinf)
+        lines.append(url)
+        lines.append("")
+
+    output = "\n".join(lines)
+    with open(file_name, "w", encoding="utf-8") as f:
+        f.write(output)
+
+    logger.info(f"Generated M3U {file_name} with {(len(lines) - 2) // 3} entries.")
+
+
 def fetch_and_transform_channels(token, retry_count=0):
     """Fetches all pages, deduplicates, and attaches stream URLs."""
     logger.info(f"Attempting to fetch channels from: {CHANNELS_URL}")
@@ -325,6 +367,14 @@ def fetch_and_transform_channels(token, retry_count=0):
             json.dump(final_output, f, indent=2, ensure_ascii=False)
 
         logger.info(f"💾 Successfully saved transformed data to {OUTPUT_FILE_NAME}.")
+
+        # --- M3U Generation ---
+        build_m3u(transformed_channels, "original_output.m3u", lambda ch: ch.get("url", ""))
+        build_m3u(
+            transformed_channels,
+            "output.m3u",
+            lambda ch: f"{PLAYER_BASE.rstrip('/')}/get-stream/{ch.get('id','').strip()}" if ch.get("id") else ""
+        )
 
     except requests.exceptions.RequestException as e:
         logger.error(f"Error fetching or processing channels (attempt {retry_count + 1}/{MAX_RETRIES}): {e}")

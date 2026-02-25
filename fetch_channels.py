@@ -72,8 +72,7 @@ CHANNELS_QUERY_PARAMS = {
     "platform": "web",
     "os": "windows",
     "page": 1,
-    "per_page": 100,
-    "category_ids[0]": "1959dec0-6f7b-4adc-9ede-f4d2f111ae3f" 
+    "per_page": 100
 }
 
 def get_auth_token(email, password):
@@ -249,7 +248,11 @@ def fetch_and_transform_channels(token, retry_count=0):
             meta = content.get("meta") or content.get("pagination") or {}
             current_page = meta.get("current_page") or meta.get("current")
             last_page = meta.get("last_page") or meta.get("last") or meta.get("total_pages")
+            server_total = meta.get("total") or meta.get("total_items") or meta.get("count")
             next_page_url = content.get("next_page_url") or meta.get("next_page_url") or None
+
+            if meta:
+                logger.info(f"Page {current_page or page} of {last_page or '?'} (server total reported: {server_total or 'unknown'})")
 
             if current_page is not None and last_page is not None:
                 try:

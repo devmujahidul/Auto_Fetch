@@ -7,7 +7,6 @@ import logging
 from datetime import datetime, timezone, timedelta
 from dotenv import load_dotenv
 from concurrent.futures import ThreadPoolExecutor, as_completed
-import google.generativeai as genai
 
 # Load environment variables from .env file if it exists (for local testing)
 load_dotenv()
@@ -38,9 +37,6 @@ ALLOWED_GROUPS = [
     "Weather",
 ]
 ALLOWED_REGIONS = ["BD", "CA", "IN", "INT", "PK", "QA", "SA", "UK", "US"]
-AI_CACHE_FILE = "ai_classifications.json"
-CLASS_STORE_FILE = "channel_classifications.json"
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-1.5-flash")
 
 def get_proxies():
     """Get proxy configuration from environment variables."""
@@ -65,6 +61,7 @@ CHANNELS_URL = "https://web.aynaott.com/api/player/channels"
 STREAM_URL = "https://web.aynaott.com/api/player/streams"
 OUTPUT_FILE_NAME = "output.json"
 PLAYER_BASE = os.environ.get("PLAYER_BASE", "https://streamer.bdstream.site")
+CHANNEL_MAPPING_FILE = os.environ.get("CHANNEL_MAPPING_FILE", "channel_mapping.json")
 
 # Base parameters for the Login request body
 DEVICE_ID = os.environ.get("LOGIN_DEVICE_ID")
@@ -306,10 +303,15 @@ def load_region_overrides(path="region_overrides.json"):
         return {}
 
 
-def classify_region(channel, overrides=None):
+def classify_region(channel, overrides=None, mapping=None):
     channel_id = str(channel.get("id", "")).strip()
     if overrides and channel_id in overrides:
         return overrides[channel_id]
+
+    if mapping and channel_id in mapping:
+        mapped_region = normalize_region(mapping[channel_id].get("region"))
+        if mapped_region:
+            return mapped_region
 
     explicit_candidates = [
         channel.get("region"),
@@ -331,94 +333,6 @@ def classify_region(channel, overrides=None):
     return "INT"
 
 
-def load_ai_cache(path=AI_CACHE_FILE):
-    if not os.path.exists(path):
-        return {}
-    try:
-        with open(path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-        return data if isinstance(data, dict) else {}
-    except Exception as e:
-        logger.warning(f"Could not load AI cache: {e}")
-        return {}
-
-
-def save_ai_cache(cache, path=AI_CACHE_FILE):
-    try:
-        with open(path, "w", encoding="utf-8") as f:
-            json.dump(cache, f, indent=2)
-    except Exception as e:
-        logger.warning(f"Could not write AI cache: {e}")
-
-
-def load_classification_store(path=CLASS_STORE_FILE):
-    if not os.path.exists(path):
-        return {}
-    try:
-        with open(path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-        return data if isinstance(data, dict) else {}
-    except Exception as e:
-        logger.warning(f"Could not load classification store: {e}")
-        return {}
-
-
-def save_classification_store(store, path=CLASS_STORE_FILE):
-    try:
-        with open(path, "w", encoding="utf-8") as f:
-            json.dump(store, f, indent=2)
-    except Exception as e:
-        logger.warning(f"Could not write classification store: {e}")
-
-
-def ensure_gemini_client():
-    api_key = os.environ.get("GOOGLE_API_KEY") or os.environ.get("GEMINI_API_KEY")
-    if not api_key:
-        return None
-    try:
-        genai.configure(api_key=api_key)
-        return genai.GenerativeModel(GEMINI_MODEL)
-    except Exception as e:
-        logger.warning(f"Could not init Gemini client: {e}")
-        return None
-
-
-def ai_classify_batch(model, channels):
-    """Classify a batch of channels. Returns {id: {group_title, region}}."""
-    if not model or not channels:
-        return {}
-
-    # Build prompt with numbered items
-    lines = [
-        "You are categorizing TV channels into two fields: group_title and region.",
-        "Allowed group_title values: " + ", ".join(ALLOWED_GROUPS),
-        "Allowed region values: " + ", ".join(ALLOWED_REGIONS),
-        "Respond ONLY with minified JSON array matching the order of items: [ {\"group_title\":\"...\",\"region\":\"...\"}, ... ].",
-        "Choose the most plausible region from the allowed list; avoid INT unless there is no reasonable country/region signal.",
-        "Hint: Bangla/Bangladesh/Bengali/Bangla TV → BD; Urdu/Pakistan → PK; Hindi/Indian languages → IN; Qatar → QA; Saudi/KSA → SA; UK brands (BBC/Sky) → UK; US brands (CNN/FOX/ABC/NBC/CBS) → US; Canada → CA; International/world/global → INT.",
-    ]
-
-    for idx, ch in enumerate(channels):
-        title = ch.get("title") or ""
-        logo = ch.get("logo") or ch.get("image") or ""
-        lines.append(f"Item {idx}: title='{title}' logo='{logo}'")
-
-    prompt = "\n".join(lines)
-
-    try:
-        resp = model.generate_content(prompt)
-        txt = (resp.text or "").strip()
-        if txt.startswith("[") and txt.endswith("]"):
-            data = json.loads(txt)
-            results = {}
-            for ch, res in zip(channels, data):
-                cid = ch.get("id") or ""
-                if cid and isinstance(res, dict):
-                    results[cid] = res
-            return results
-    except Exception as e:
-        logger.debug(f"Gemini batch classify failed: {e}")
-    return {}
 
 
 def normalize_group(val):
@@ -445,10 +359,43 @@ def load_group_overrides(path="group_overrides.json"):
         return {}
 
 
-def classify_group_title(channel, overrides=None):
+def load_channel_mapping(path=CHANNEL_MAPPING_FILE):
+    if not os.path.exists(path):
+        logger.info(f"No channel mapping file found at {path}; using classification for unknown channels")
+        return {}
+
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        mapping = {}
+        for cid, entry in data.items():
+            cid_str = str(cid).strip()
+            if not cid_str:
+                continue
+
+            mapping[cid_str] = {
+                "title": (entry.get("title") or "").strip(),
+                "group_title": normalize_group(entry.get("group_title")),
+                "region": normalize_region(entry.get("region")),
+            }
+
+        logger.info(f"Loaded {len(mapping)} channel mappings from {path}")
+        return mapping
+    except Exception as e:
+        logger.warning(f"Could not load channel mapping from {path}: {e}")
+        return {}
+
+
+def classify_group_title(channel, overrides=None, mapping=None):
     channel_id = str(channel.get("id", "")).strip()
     if overrides and channel_id in overrides:
         return overrides[channel_id]
+
+    if mapping and channel_id in mapping:
+        mapped_group = normalize_group(mapping[channel_id].get("group_title"))
+        if mapped_group:
+            return mapped_group
 
     explicit_candidates = [
         channel.get("category"),
@@ -472,7 +419,7 @@ def classify_group_title(channel, overrides=None):
     return "Unknown"
 
 
-def build_m3u(channels, file_name, url_builder, group_overrides=None, region_overrides=None):
+def build_m3u(channels, file_name, url_builder, group_overrides=None, region_overrides=None, channel_mapping=None):
     lines = ["#EXTM3U", ""]
 
     for channel in channels:
@@ -484,8 +431,8 @@ def build_m3u(channels, file_name, url_builder, group_overrides=None, region_ove
         tvg_name = channel.get("title", "").strip()
         tvg_logo = channel.get("logo") or channel.get("image") or ""
 
-        group_title = classify_group_title(channel, group_overrides)
-        region = classify_region(channel, region_overrides)
+        group_title = classify_group_title(channel, group_overrides, channel_mapping)
+        region = classify_region(channel, region_overrides, channel_mapping)
 
         extinf = (
             f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{tvg_name}" tvg-logo="{tvg_logo}" '
@@ -583,11 +530,7 @@ def fetch_and_transform_channels(token, retry_count=0):
         stream_urls = fetch_stream_urls_batch(token, all_raw_channels)
         group_overrides = load_group_overrides()
         region_overrides = load_region_overrides()
-        ai_cache = load_ai_cache()
-        ai_cache_changed = False
-        ai_model = ensure_gemini_client()
-        class_store = load_classification_store()
-        class_store_changed = False
+        channel_mapping = load_channel_mapping()
 
         # --- Data Transformation & Deduplication ---
         seen_ids = {}
@@ -614,52 +557,11 @@ def fetch_and_transform_channels(token, retry_count=0):
                 channel_copy["logo"] = channel_copy.get("image")
             channel_copy["url"] = stream_url
 
-            cid = channel_copy.get("id", "")
-
-            # Apply stored classification if available
-            stored = class_store.get(cid) if cid else None
-            if stored:
-                g_stored = normalize_group(stored.get("group_title"))
-                r_stored = normalize_region(stored.get("region"))
-                channel_copy["group_title"] = g_stored or classify_group_title(channel_copy, group_overrides)
-                channel_copy["region"] = r_stored or classify_region(channel_copy, region_overrides)
-            else:
-                channel_copy["group_title"] = classify_group_title(channel_copy, group_overrides)
-                channel_copy["region"] = classify_region(channel_copy, region_overrides)
-
-            # Prepare for optional AI batch refinement
-            if ai_model and cid and cid not in ai_cache and cid not in class_store:
-                # collect for batch call
-                pass
+            channel_copy["group_title"] = classify_group_title(channel_copy, group_overrides, channel_mapping)
+            channel_copy["region"] = classify_region(channel_copy, region_overrides, channel_mapping)
 
             transformed_channels.append(channel_copy)
 
-        # AI batch refinement (single batch to reduce latency)
-        if ai_model:
-            to_classify = [ch for ch in transformed_channels if ch.get("id") and ch.get("id") not in ai_cache and ch.get("id") not in class_store]
-            if to_classify:
-                ai_results = ai_classify_batch(ai_model, to_classify)
-                if ai_results:
-                    for ch in transformed_channels:
-                        cid = ch.get("id")
-                        if not cid:
-                            continue
-                        res = ai_results.get(cid) or ai_cache.get(cid)
-                        if res:
-                            g = normalize_group(res.get("group_title"))
-                            r = normalize_region(res.get("region"))
-                            if g:
-                                ch["group_title"] = g
-                            if r:
-                                ch["region"] = r
-                            ai_cache[cid] = res
-                            ai_cache_changed = True
-                            class_store[cid] = {
-                                "title": ch.get("title", ""),
-                                "group_title": g or ch.get("group_title"),
-                                "region": r or ch.get("region"),
-                            }
-                            class_store_changed = True
 
         final_output = {
             "created_at": datetime.now(timezone(timedelta(hours=6))).isoformat(),
@@ -676,19 +578,23 @@ def fetch_and_transform_channels(token, retry_count=0):
 
         logger.info(f"💾 Successfully saved transformed data to {OUTPUT_FILE_NAME}.")
 
-        if ai_cache_changed:
-            save_ai_cache(ai_cache)
-        if class_store_changed:
-            save_classification_store(class_store)
 
         # --- M3U Generation ---
-        build_m3u(transformed_channels, "original_output.m3u", lambda ch: ch.get("url", ""), group_overrides, region_overrides)
+        build_m3u(
+            transformed_channels,
+            "original_output.m3u",
+            lambda ch: ch.get("url", ""),
+            group_overrides,
+            region_overrides,
+            channel_mapping,
+        )
         build_m3u(
             transformed_channels,
             "output.m3u",
             lambda ch: f"{PLAYER_BASE.rstrip('/')}/get-stream/{ch.get('id','').strip()}" if ch.get("id") else "",
             group_overrides,
             region_overrides,
+            channel_mapping,
         )
 
     except requests.exceptions.RequestException as e:

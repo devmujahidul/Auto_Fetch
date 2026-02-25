@@ -48,7 +48,6 @@ jobs:
         AYNA_OTT_PASSWORD: ${{ secrets.AYNA_OTT_PASSWORD }}
         LOGIN_DEVICE_ID: ${{ secrets.LOGIN_DEVICE_ID }}
         PLAYER_BASE: ${{ secrets.PLAYER_BASE }}
-        GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
         SOCKS5_PROXY_HOST: ${{ secrets.SOCKS5_PROXY_HOST }}
         SOCKS5_PROXY_PORT: ${{ secrets.SOCKS5_PROXY_PORT }}
         SOCKS5_PROXY_USER: ${{ secrets.SOCKS5_PROXY_USER }}
@@ -82,13 +81,7 @@ jobs:
       run: |
         missing=0
 
-        # Ensure classification store exists; create empty if missing to avoid failure on first run
-        if [ ! -f "channel_classifications.json" ]; then
-          echo "{}" > channel_classifications.json
-          echo "ℹ️ channel_classifications.json was missing; created empty store"
-        fi
-
-        for f in output.json original_output.m3u output.m3u channel_classifications.json; do
+        for f in output.json original_output.m3u output.m3u; do
           if [ -f "$f" ]; then
             echo "✅ $f exists - $(wc -c < "$f") bytes"
           else
@@ -117,7 +110,6 @@ jobs:
           output.json
           original_output.m3u
           output.m3u
-          channel_classifications.json
         retention-days: 7
       continue-on-error: true
 
@@ -129,7 +121,6 @@ jobs:
           output.json
           original_output.m3u
           output.m3u
-          channel_classifications.json
         retention-days: 7
       continue-on-error: true
 
@@ -140,12 +131,12 @@ jobs:
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         
-        if git diff --quiet HEAD -- output.json original_output.m3u output.m3u channel_classifications.json; then
+        if git diff --quiet HEAD -- output.json original_output.m3u output.m3u; then
           echo "ℹ️ No changes to outputs to commit"
           echo "changes=false" >> $GITHUB_OUTPUT
         else
           echo "📝 Changes detected, committing..."
-          git add output.json original_output.m3u output.m3u channel_classifications.json
+          git add output.json original_output.m3u output.m3u
           TIMESTAMP=$(date -u +'%Y-%m-%d %H:%M:%S UTC')
           git commit -m "Update channels data [auto-fetch] $TIMESTAMP"
           git push origin HEAD:main 2>&1 || echo "⚠️ Git push encountered an issue (non-blocking)"

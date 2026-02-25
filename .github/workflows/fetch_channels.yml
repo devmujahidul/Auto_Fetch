@@ -124,7 +124,7 @@ jobs:
         retention-days: 7
       continue-on-error: true
 
-    - name: 📝 Commit and push changes (non-blocking)
+    - name: 📝 Commit and push changes
       id: push_changes
       if: always()
       run: |
@@ -139,10 +139,9 @@ jobs:
           git add output.json original_output.m3u output.m3u
           TIMESTAMP=$(date -u +'%Y-%m-%d %H:%M:%S UTC')
           git commit -m "Update channels data [auto-fetch] $TIMESTAMP"
-          git push origin HEAD:main 2>&1 || echo "⚠️ Git push encountered an issue (non-blocking)"
+          git push origin HEAD:main
           echo "changes=true" >> $GITHUB_OUTPUT
         fi
-      continue-on-error: true
 
     - name: 🔔 Report Job Status
       if: always()
@@ -165,6 +164,7 @@ jobs:
       env:
         FETCH_OUTCOME: ${{ steps.fetch_script.outcome }}
         VERIFY_STATUS: ${{ steps.verify_output.outputs.status }}
+        PUSH_CHANGES: ${{ steps.push_changes.outcome }}
       run: |
         if [ "$FETCH_OUTCOME" = "failure" ]; then
           echo "❌ CRITICAL: Fetch script failed after all retries!"
@@ -182,6 +182,11 @@ jobs:
         
         if [ "$VERIFY_STATUS" != "success" ]; then
           echo "❌ CRITICAL: output.json verification failed!"
+          exit 1
+        fi
+
+        if [ "$PUSH_CHANGES" = "failure" ]; then
+          echo "❌ CRITICAL: Git push failed; outputs were not written back to the repo."
           exit 1
         fi
         

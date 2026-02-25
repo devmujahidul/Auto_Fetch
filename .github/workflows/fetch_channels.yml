@@ -47,6 +47,7 @@ jobs:
         AYNA_OTT_EMAIL: ${{ secrets.AYNA_OTT_EMAIL }}
         AYNA_OTT_PASSWORD: ${{ secrets.AYNA_OTT_PASSWORD }}
         LOGIN_DEVICE_ID: ${{ secrets.LOGIN_DEVICE_ID }}
+        PLAYER_BASE: ${{ secrets.PLAYER_BASE }}
         SOCKS5_PROXY_HOST: ${{ secrets.SOCKS5_PROXY_HOST }}
         SOCKS5_PROXY_PORT: ${{ secrets.SOCKS5_PROXY_PORT }}
         SOCKS5_PROXY_USER: ${{ secrets.SOCKS5_PROXY_USER }}
@@ -75,16 +76,25 @@ jobs:
         exit 1
       continue-on-error: true
 
-    - name: ✅ Verify output file exists
+    - name: ✅ Verify output files exist
       id: verify_output
       run: |
-        if [ -f "output.json" ]; then
+        missing=0
+
+        for f in output.json original_output.m3u output.m3u; do
+          if [ -f "$f" ]; then
+            echo "✅ $f exists - $(wc -c < "$f") bytes"
+          else
+            echo "❌ ERROR: $f not found"
+            missing=1
+          fi
+        done
+
+        if [ $missing -eq 0 ]; then
           echo "status=success" >> $GITHUB_OUTPUT
-          echo "✅ output.json exists - $(wc -c < output.json) bytes"
           python -c "import json; data = json.load(open('output.json')); print(f\"Last updated: {data.get('last_updated', 'N/A')}\"); print(f\"Channels count: {len(data.get('channels', []))}\")" || true
         else
           echo "status=not_found" >> $GITHUB_OUTPUT
-          echo "❌ ERROR: output.json not found - fetch completely failed!"
           exit 1
         fi
       continue-on-error: true
@@ -98,14 +108,19 @@ jobs:
         path: |
           fetch_status.json
           output.json
+          original_output.m3u
+          output.m3u
         retention-days: 7
       continue-on-error: true
 
-    - name: ⬆️ Upload output.json as an Artifact
+    - name: ⬆️ Upload outputs as an Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: ayna-ott-channels-${{ github.sha }}
-        path: output.json
+        name: ayna-ott-outputs-${{ github.sha }}
+        path: |
+          output.json
+          original_output.m3u
+          output.m3u
         retention-days: 7
       continue-on-error: true
 
@@ -116,12 +131,12 @@ jobs:
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         
-        if git diff --quiet HEAD -- output.json; then
-          echo "ℹ️ No changes to output.json to commit"
+        if git diff --quiet HEAD -- output.json original_output.m3u output.m3u; then
+          echo "ℹ️ No changes to outputs to commit"
           echo "changes=false" >> $GITHUB_OUTPUT
         else
           echo "📝 Changes detected, committing..."
-          git add output.json
+          git add output.json original_output.m3u output.m3u
           TIMESTAMP=$(date -u +'%Y-%m-%d %H:%M:%S UTC')
           git commit -m "Update channels data [auto-fetch] $TIMESTAMP"
           git push origin HEAD:main 2>&1 || echo "⚠️ Git push encountered an issue (non-blocking)"

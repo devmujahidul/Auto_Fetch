@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-03-25T17:43:57.634688+06:00",
+  "created_at": "2026-03-25T19:15:51.444143+06:00",
   "disclaimer": "We do not host or serve any content. All channels and streams listed are publicly available from third-party providers.",
-  "total_channels": 281,
+  "total_channels": 272,
   "server_total_reported": null,
   "channels": [
     {
@@ -1505,31 +1505,6 @@
       "region": "US"
     },
     {
-      "id": "9cf16121-07d4-48c1-9f36-14ee8b7e3f31",
-      "title": "Ekin Turk",
-      "ageLimit": 0,
-      "image": "https://s3.aynaott.com/storage/689a960bf33c0412ba1077752b632c3d",
-      "landscapeImage": "https://s3.aynaott.com/storage/0d44f9c1c1efd764f4b69be8dacc1a9b",
-      "available": false,
-      "timeShiftLength": 0,
-      "npvrAvailable": false,
-      "epgDuration": 86400,
-      "keyCode": 317,
-      "planIds": [
-        "b7e1310f-4f47-4800-aa0b-a01f9956100a",
-        "8118aff4-7fb0-4bd2-bd71-4a95427beb65",
-        "322cc1d7-296b-4d3e-938e-1f70752d3f9a"
-      ],
-      "connectionStatus": true,
-      "purchased": false,
-      "status": "notPurchased",
-      "favorite": false,
-      "logo": "https://s3.aynaott.com/storage/689a960bf33c0412ba1077752b632c3d",
-      "url": "",
-      "group_title": "Music",
-      "region": "INT"
-    },
-    {
       "id": "f6f1a6ed-4629-4010-b50d-13fa4dd9a575",
       "title": "   \t USA TV",
       "ageLimit": 0,
@@ -1653,31 +1628,6 @@
       "url": "",
       "group_title": "Sports",
       "region": "US"
-    },
-    {
-      "id": "d8909fcb-c413-48f5-b31b-54cbee95dd4e",
-      "title": "M NET Kids",
-      "ageLimit": 0,
-      "image": "https://s3.aynaott.com/storage/0b81808a440086d6b3ae6753cbd0cf25",
-      "landscapeImage": "https://s3.aynaott.com/storage/88fbf652b52cd969a206fdc3f66c51be",
-      "available": false,
-      "timeShiftLength": 0,
-      "npvrAvailable": false,
-      "epgDuration": 86400,
-      "keyCode": 174,
-      "planIds": [
-        "b7e1310f-4f47-4800-aa0b-a01f9956100a",
-        "8118aff4-7fb0-4bd2-bd71-4a95427beb65",
-        "322cc1d7-296b-4d3e-938e-1f70752d3f9a"
-      ],
-      "connectionStatus": true,
-      "purchased": false,
-      "status": "notPurchased",
-      "favorite": false,
-      "logo": "https://s3.aynaott.com/storage/0b81808a440086d6b3ae6753cbd0cf25",
-      "url": "",
-      "group_title": "Kids",
-      "region": "INT"
     },
     {
       "id": "6aa7469a-89a8-4c46-a141-90fe1fff7893",
@@ -2353,31 +2303,6 @@
       "url": "",
       "group_title": "Entertainment",
       "region": "BD"
-    },
-    {
-      "id": "140f1e47-362e-4fec-ba69-d766b6b03a32",
-      "title": "NTV Europe",
-      "ageLimit": 0,
-      "image": "https://s3.aynaott.com/storage/4c0efea4f87d343995fb661bad39a066",
-      "landscapeImage": "https://s3.aynaott.com/storage/1b385bee0e8513798088d10c7a31372c",
-      "available": false,
-      "timeShiftLength": 0,
-      "npvrAvailable": false,
-      "epgDuration": 86400,
-      "keyCode": 401,
-      "planIds": [
-        "b7e1310f-4f47-4800-aa0b-a01f9956100a",
-        "8118aff4-7fb0-4bd2-bd71-4a95427beb65",
-        "322cc1d7-296b-4d3e-938e-1f70752d3f9a"
-      ],
-      "connectionStatus": true,
-      "purchased": false,
-      "status": "notPurchased",
-      "favorite": false,
-      "logo": "https://s3.aynaott.com/storage/4c0efea4f87d343995fb661bad39a066",
-      "url": "",
-      "group_title": "News",
-      "region": "UK"
     },
     {
       "id": "a3d48c46-7902-45e2-abf9-0fab60c4d117",
@@ -3104,31 +3029,6 @@
       "region": "INT"
     },
     {
-      "id": "619f8fb4-35bc-4d19-bcbb-cd35b5843ac0",
-      "title": "Geo Super HD",
-      "ageLimit": 0,
-      "image": "https://s3.aynaott.com/storage/167972163e22b4904ad9e4286b49eb6e",
-      "landscapeImage": "https://s3.aynaott.com/storage/3f61873961c03cda50910b3c97ea5de0",
-      "available": false,
-      "timeShiftLength": 0,
-      "npvrAvailable": false,
-      "epgDuration": 86400,
-      "keyCode": 140,
-      "planIds": [
-        "b7e1310f-4f47-4800-aa0b-a01f9956100a",
-        "8118aff4-7fb0-4bd2-bd71-4a95427beb65",
-        "322cc1d7-296b-4d3e-938e-1f70752d3f9a"
-      ],
-      "connectionStatus": true,
-      "purchased": false,
-      "status": "notPurchased",
-      "favorite": false,
-      "logo": "https://s3.aynaott.com/storage/167972163e22b4904ad9e4286b49eb6e",
-      "url": "",
-      "group_title": "Sports",
-      "region": "PK"
-    },
-    {
       "id": "f7f53551-5bcf-4704-9652-18a8b70568ca",
       "title": "IBTV USA",
       "ageLimit": 0,
@@ -3352,31 +3252,6 @@
       "url": "",
       "group_title": "Entertainment",
       "region": "IN"
-    },
-    {
-      "id": "6f4426c7-e48d-4b57-9747-4e0af8cc0365",
-      "title": "Tsport 7",
-      "ageLimit": 0,
-      "image": "https://s3.aynaott.com/storage/71eeb40f82edb2a3c28fbfc8d79ecd71",
-      "landscapeImage": "https://s3.aynaott.com/storage/1ac497d4030d8d719cfa4ec10ddcbf96",
-      "available": false,
-      "timeShiftLength": 0,
-      "npvrAvailable": false,
-      "epgDuration": 86400,
-      "keyCode": 141,
-      "planIds": [
-        "b7e1310f-4f47-4800-aa0b-a01f9956100a",
-        "8118aff4-7fb0-4bd2-bd71-4a95427beb65",
-        "322cc1d7-296b-4d3e-938e-1f70752d3f9a"
-      ],
-      "connectionStatus": true,
-      "purchased": false,
-      "status": "notPurchased",
-      "favorite": false,
-      "logo": "https://s3.aynaott.com/storage/71eeb40f82edb2a3c28fbfc8d79ecd71",
-      "url": "",
-      "group_title": "Sports",
-      "region": "BD"
     },
     {
       "id": "6b66f133-9d9b-44c6-870a-8441c8b99fe1",
@@ -6051,31 +5926,6 @@
       "region": "INT"
     },
     {
-      "id": "307777ec-0dd3-4e09-9835-5fe3844054dd",
-      "title": "Hallmark Movies ",
-      "ageLimit": 0,
-      "image": "https://s3.aynaott.com/storage/69015a71861010c5136d144e8e67dd1c",
-      "landscapeImage": "https://s3.aynaott.com/storage/4340efe4e86faab7fe658f516e0225b0",
-      "available": false,
-      "timeShiftLength": 0,
-      "npvrAvailable": false,
-      "epgDuration": 86400,
-      "keyCode": 333,
-      "planIds": [
-        "b7e1310f-4f47-4800-aa0b-a01f9956100a",
-        "8118aff4-7fb0-4bd2-bd71-4a95427beb65",
-        "322cc1d7-296b-4d3e-938e-1f70752d3f9a"
-      ],
-      "connectionStatus": true,
-      "purchased": false,
-      "status": "notPurchased",
-      "favorite": false,
-      "logo": "https://s3.aynaott.com/storage/69015a71861010c5136d144e8e67dd1c",
-      "url": "",
-      "group_title": "Movies",
-      "region": "US"
-    },
-    {
       "id": "e061189b-415d-4241-b0ab-7077924c6775",
       "title": "Movie Sphere",
       "ageLimit": 0,
@@ -6276,31 +6126,6 @@
       "region": "PK"
     },
     {
-      "id": "862bc1f4-6430-4198-87c5-fa040776c1c7",
-      "title": "Persiana Sports",
-      "ageLimit": 0,
-      "image": "https://s3.aynaott.com/storage/8357a8153d27ce30ff2e5bbe7f1c19cd",
-      "landscapeImage": "https://s3.aynaott.com/storage/61adff2c61cb7e8d3d4539981fbec87a",
-      "available": false,
-      "timeShiftLength": 0,
-      "npvrAvailable": false,
-      "epgDuration": 86400,
-      "keyCode": 128,
-      "planIds": [
-        "b7e1310f-4f47-4800-aa0b-a01f9956100a",
-        "8118aff4-7fb0-4bd2-bd71-4a95427beb65",
-        "322cc1d7-296b-4d3e-938e-1f70752d3f9a"
-      ],
-      "connectionStatus": true,
-      "purchased": false,
-      "status": "notPurchased",
-      "favorite": false,
-      "logo": "https://s3.aynaott.com/storage/8357a8153d27ce30ff2e5bbe7f1c19cd",
-      "url": "",
-      "group_title": "Sports",
-      "region": "INT"
-    },
-    {
       "id": "38b0853b-8333-4387-bd86-8437073a1c49",
       "title": "Pro Sports International",
       "ageLimit": 0,
@@ -6424,31 +6249,6 @@
       "url": "",
       "group_title": "Entertainment",
       "region": "US"
-    },
-    {
-      "id": "c5a46f6e-9112-4043-82ff-e9e79156f8f8",
-      "title": "4 Afganistan",
-      "ageLimit": 0,
-      "image": "https://s3.aynaott.com/storage/a7c10c9a746bc1ab641d24e19136291d",
-      "landscapeImage": "https://s3.aynaott.com/storage/3515618e761df84fe8b788dae9b0b314",
-      "available": false,
-      "timeShiftLength": 0,
-      "npvrAvailable": false,
-      "epgDuration": 86400,
-      "keyCode": 417,
-      "planIds": [
-        "b7e1310f-4f47-4800-aa0b-a01f9956100a",
-        "8118aff4-7fb0-4bd2-bd71-4a95427beb65",
-        "322cc1d7-296b-4d3e-938e-1f70752d3f9a"
-      ],
-      "connectionStatus": true,
-      "purchased": false,
-      "status": "notPurchased",
-      "favorite": false,
-      "logo": "https://s3.aynaott.com/storage/a7c10c9a746bc1ab641d24e19136291d",
-      "url": "",
-      "group_title": "Entertainment",
-      "region": "INT"
     },
     {
       "id": "c7b00628-bc52-4609-be0a-ad02a16e4c04",
@@ -6801,31 +6601,6 @@
       "region": "INT"
     },
     {
-      "id": "1bbda610-2fcb-4dac-ba03-714a2591a8c4",
-      "title": "FANCODE",
-      "ageLimit": 0,
-      "image": "https://s3.aynaott.com/storage/7b15e9ddbe66678919ce278eae4ae330",
-      "landscapeImage": "https://s3.aynaott.com/storage/ff95f07d0762a9a1c9262e8e0c590fa1",
-      "available": false,
-      "timeShiftLength": 0,
-      "npvrAvailable": false,
-      "epgDuration": 86400,
-      "keyCode": 86,
-      "planIds": [
-        "b7e1310f-4f47-4800-aa0b-a01f9956100a",
-        "8118aff4-7fb0-4bd2-bd71-4a95427beb65",
-        "322cc1d7-296b-4d3e-938e-1f70752d3f9a"
-      ],
-      "connectionStatus": true,
-      "purchased": false,
-      "status": "notPurchased",
-      "favorite": false,
-      "logo": "https://s3.aynaott.com/storage/7b15e9ddbe66678919ce278eae4ae330",
-      "url": "",
-      "group_title": "Sports",
-      "region": "IN"
-    },
-    {
       "id": "9df4ab05-debd-4bed-ac64-028579037c73",
       "title": "And tv",
       "ageLimit": 0,
@@ -7026,5 +6801,5 @@
       "region": "US"
     }
   ],
-  "last_updated": "2026-03-25T11:43:57.634702"
+  "last_updated": "2026-03-25T13:15:51.444159"
 }

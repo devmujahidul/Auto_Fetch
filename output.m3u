@@ -363,14 +363,14 @@ https://streamer.bdstream.site/get-stream/1a2c8ec3-61d5-4355-80e2-fc3c9b178a0d
 #EXTINF:-1 tvg-id="5a6ca809-0fbd-44d5-bcf4-aeb4d4cbd849" tvg-name="Peace TV" tvg-logo="https://s3.aynaott.com/storage/d197bbb60d05bea8508e65576eba57b1" group-title="Religious" region="INT", Peace TV
 https://streamer.bdstream.site/get-stream/5a6ca809-0fbd-44d5-bcf4-aeb4d4cbd849
 
+#EXTINF:-1 tvg-id="619f8fb4-35bc-4d19-bcbb-cd35b5843ac0" tvg-name="Geo Super HD" tvg-logo="https://s3.aynaott.com/storage/167972163e22b4904ad9e4286b49eb6e" group-title="Sports" region="PK", Geo Super HD
+https://streamer.bdstream.site/get-stream/619f8fb4-35bc-4d19-bcbb-cd35b5843ac0
+
 #EXTINF:-1 tvg-id="f7f53551-5bcf-4704-9652-18a8b70568ca" tvg-name="IBTV USA" tvg-logo="https://s3.aynaott.com/storage/f35737db9b254d12a393044bb17ee529" group-title="Entertainment" region="US", IBTV USA
 https://streamer.bdstream.site/get-stream/f7f53551-5bcf-4704-9652-18a8b70568ca
 
 #EXTINF:-1 tvg-id="cd847504-8ebf-43ad-8beb-b53d80befb4b" tvg-name="& Pictures" tvg-logo="https://s3.aynaott.com/storage/c12b1819959a21c32f7f6482908cc04d" group-title="Movies" region="IN", & Pictures
 https://streamer.bdstream.site/get-stream/cd847504-8ebf-43ad-8beb-b53d80befb4b
-
-#EXTINF:-1 tvg-id="ff14d64f-0fcb-45af-8313-9ae3ff788052" tvg-name="Zee Bangla Sonar" tvg-logo="https://s3.aynaott.com/storage/c1a4fef16e850e8ebe162070f5d41608" group-title="Entertainment" region="IN", Zee Bangla Sonar
-https://streamer.bdstream.site/get-stream/ff14d64f-0fcb-45af-8313-9ae3ff788052
 
 #EXTINF:-1 tvg-id="30c01099-08c9-45d3-91b2-572ca4c173eb" tvg-name="Network 10" tvg-logo="https://s3.aynaott.com/storage/cb1a6dd677fb40e88847218c047d6bc3" group-title="Entertainment" region="INT", Network 10
 https://streamer.bdstream.site/get-stream/30c01099-08c9-45d3-91b2-572ca4c173eb
@@ -653,9 +653,6 @@ https://streamer.bdstream.site/get-stream/1092effd-ec5f-4842-a9eb-09db84a23415
 
 #EXTINF:-1 tvg-id="7a0871d0-1a45-430c-b513-3bba8a9cf820" tvg-name="4k Travel" tvg-logo="https://s3.aynaott.com/storage/3a451fe2db2f64b31f19b72f512e4a15" group-title="Lifestyle" region="INT", 4k Travel
 https://streamer.bdstream.site/get-stream/7a0871d0-1a45-430c-b513-3bba8a9cf820
-
-#EXTINF:-1 tvg-id="29ca0414-87d4-43c6-8477-68ef5a6391a6" tvg-name="4 Sports" tvg-logo="https://s3.aynaott.com/storage/2c2d91497d83b1c3a0fa04a50471aa64" group-title="Sports" region="INT", 4 Sports
-https://streamer.bdstream.site/get-stream/29ca0414-87d4-43c6-8477-68ef5a6391a6
 
 #EXTINF:-1 tvg-id="d2152bbb-64e0-4822-826b-60853ca1d056" tvg-name="WOF 1" tvg-logo="https://s3.aynaott.com/storage/4bb1023a172b298e628fcee016ef246e" group-title="Sports" region="INT", WOF 1
 https://streamer.bdstream.site/get-stream/d2152bbb-64e0-4822-826b-60853ca1d056

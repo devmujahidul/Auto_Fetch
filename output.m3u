@@ -812,3 +812,6 @@ https://streamer.bdstream.site/get-stream/dba3bf51-175c-4815-9754-5e727e5d6250
 
 #EXTINF:-1 tvg-id="02653ebb-8b8b-4812-92d0-8ecff656fc3f" tvg-name="PBS Kids" tvg-logo="https://s3.aynaott.com/storage/cd8ff1c9af0a4c0dcc67ea2bbd999c97" group-title="Kids" region="US", PBS Kids
 https://streamer.bdstream.site/get-stream/02653ebb-8b8b-4812-92d0-8ecff656fc3f
+
+#EXTINF:-1 tvg-id="79c26f90-3a3e-43eb-9173-1c78bbbd5013" tvg-name="Sony ATTH" tvg-logo="https://s3.aynaott.com/storage/96fe41873ce4754c82b50032a545a5e2" group-title="Entertainment" region="INT", Sony ATTH
+https://streamer.bdstream.site/get-stream/79c26f90-3a3e-43eb-9173-1c78bbbd5013

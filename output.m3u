@@ -815,3 +815,6 @@ https://streamer.bdstream.site/get-stream/02653ebb-8b8b-4812-92d0-8ecff656fc3f
 
 #EXTINF:-1 tvg-id="79c26f90-3a3e-43eb-9173-1c78bbbd5013" tvg-name="Sony ATTH" tvg-logo="https://s3.aynaott.com/storage/96fe41873ce4754c82b50032a545a5e2" group-title="Entertainment" region="INT", Sony ATTH
 https://streamer.bdstream.site/get-stream/79c26f90-3a3e-43eb-9173-1c78bbbd5013
+
+#EXTINF:-1 tvg-id="4d584583-f231-4b37-b634-0f92046da57b" tvg-name="Star News" tvg-logo="https://s3.aynaott.com/storage/fa10f6a102bf5d73a466f3f51b95ab91" group-title="News" region="INT", Star News
+https://streamer.bdstream.site/get-stream/4d584583-f231-4b37-b634-0f92046da57b

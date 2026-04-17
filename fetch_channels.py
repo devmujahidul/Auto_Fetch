@@ -4,6 +4,8 @@ import os
 import sys
 import time
 import logging
+import tempfile
+from pathlib import Path
 from datetime import datetime, timezone, timedelta
 from dotenv import load_dotenv
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -60,8 +62,11 @@ LOGIN_URL = "https://web.aynaott.com/api/authorization/login"
 CHANNELS_URL = "https://web.aynaott.com/api/player/channels"
 STREAM_URL = "https://web.aynaott.com/api/player/streams"
 OUTPUT_FILE_NAME = "output.json"
+STATUS_FILE_NAME = "fetch_status.json"
+LOCK_FILE_NAME = "fetch_channels.lock"
 PLAYER_BASE = os.environ.get("PLAYER_BASE", "https://streamer.bdstream.site")
 CHANNEL_MAPPING_FILE = os.environ.get("CHANNEL_MAPPING_FILE", "channel_mapping.json")
+LOCK_STALE_AFTER_SECONDS = int(os.environ.get("FETCH_LOCK_STALE_AFTER_SECONDS", "21600"))
 
 # Base parameters for the Login request body
 DEVICE_ID = os.environ.get("LOGIN_DEVICE_ID")
@@ -449,6 +454,67 @@ def build_m3u(channels, file_name, url_builder, group_overrides=None, region_ove
     logger.info(f"Generated M3U {file_name} with {(len(lines) - 2) // 3} entries.")
 
 
+def _lock_path():
+    return Path(LOCK_FILE_NAME)
+
+
+def _is_lock_stale(lock_path: Path) -> bool:
+    try:
+        age_seconds = time.time() - lock_path.stat().st_mtime
+        return age_seconds > LOCK_STALE_AFTER_SECONDS
+    except OSError:
+        return False
+
+
+def acquire_run_lock() -> bool:
+    lock_path = _lock_path()
+
+    if lock_path.exists() and _is_lock_stale(lock_path):
+        try:
+            lock_path.unlink()
+            logger.warning("Removed stale run lock before starting a new fetch.")
+        except OSError as exc:
+            logger.warning(f"Could not remove stale lock file {lock_path}: {exc}")
+            return False
+
+    try:
+        fd = os.open(str(lock_path), os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+    except FileExistsError:
+        return False
+
+    with os.fdopen(fd, "w", encoding="utf-8") as lock_file:
+        lock_file.write(
+            json.dumps(
+                {
+                    "pid": os.getpid(),
+                    "started_at": datetime.now().isoformat(),
+                },
+                indent=2,
+            )
+        )
+
+    return True
+
+
+def release_run_lock() -> None:
+    lock_path = _lock_path()
+    try:
+        lock_path.unlink()
+    except FileNotFoundError:
+        pass
+    except OSError as exc:
+        logger.warning(f"Could not remove run lock {lock_path}: {exc}")
+
+
+def _atomic_write_text(path: str, payload: str) -> None:
+    target = Path(path)
+    target.parent.mkdir(parents=True, exist_ok=True)
+    with tempfile.NamedTemporaryFile("w", encoding="utf-8", delete=False, dir=str(target.parent)) as tmp_file:
+        tmp_file.write(payload)
+        temp_name = tmp_file.name
+    os.replace(temp_name, target)
+
+
 def fetch_and_transform_channels(token, retry_count=0):
     """Fetches all pages, deduplicates, and attaches stream URLs."""
     logger.info(f"Attempting to fetch channels from: {CHANNELS_URL}")
@@ -621,12 +687,15 @@ def write_status_file(status: str, message: str = ""):
             "timestamp": datetime.now().isoformat(),
             "message": message
         }
-        with open("fetch_status.json", "w", encoding="utf-8") as f:
-            json.dump(status_data, f, indent=2)
+        _atomic_write_text(STATUS_FILE_NAME, json.dumps(status_data, indent=2))
     except Exception as e:
         logger.warning(f"Could not write status file: {e}")
 
 if __name__ == "__main__":
+    if not acquire_run_lock():
+        logger.warning("Another fetch run is already active; skipping this execution.")
+        sys.exit(0)
+
     try:
         logger.info("=" * 60)
         logger.info("Starting Ayna OTT Channel Fetch")
@@ -672,3 +741,5 @@ if __name__ == "__main__":
         logger.critical(f"Unexpected error: {e}", exc_info=True)
         write_status_file("failed", f"Unexpected error: {str(e)}")
         sys.exit(1)
+    finally:
+        release_run_lock()

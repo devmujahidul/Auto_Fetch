@@ -3,7 +3,7 @@ name: Fetch Ayna OTT Channels
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */1 * * *' # Run every 1 hour
+    - cron: '*/25 * * * *' # Run every 25 minutes
 
 permissions:
   contents: write

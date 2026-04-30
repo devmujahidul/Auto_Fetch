@@ -3,7 +3,7 @@ name: Fetch Ayna OTT Channels
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/25 * * * *' # Run every 25 minutes
+    - cron: '*/50 * * * *' # Run every 50 minutes (before 1-hour URL expiration)
 
 permissions:
   contents: write
@@ -14,7 +14,7 @@ env:
 jobs:
   fetch_channels_job:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 15
     
     steps:
     - name: ⬇️ Checkout code
@@ -22,12 +22,34 @@ jobs:
       with:
         fetch-depth: 1
 
+    - name: ⏭️ Check if recent successful run exists
+      id: check_status
+      run: |
+        if [ -f "fetch_status.json" ]; then
+          STATUS=$(python3 -c "import json; data=json.load(open('fetch_status.json')); print(data.get('status', ''))" 2>/dev/null || echo "")
+          TIMESTAMP=$(python3 -c "import json, datetime; data=json.load(open('fetch_status.json')); ts=data.get('timestamp',''); print((datetime.datetime.fromisoformat(ts) if ts else datetime.datetime.min).isoformat())" 2>/dev/null || echo "")
+          
+          if [ "$STATUS" = "success" ] && [ ! -z "$TIMESTAMP" ]; then
+            LAST_RUN_SECONDS=$(python3 -c "import datetime; print(int((datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None) - datetime.datetime.fromisoformat('$TIMESTAMP')).total_seconds()))" 2>/dev/null || echo "0")
+            
+            if [ "$LAST_RUN_SECONDS" -lt 3300 ]; then
+              echo "skip=true" >> $GITHUB_OUTPUT
+              echo "⏭️ Last successful run was ${LAST_RUN_SECONDS}s ago - skipping (URLs still fresh)"
+              exit 0
+            fi
+          fi
+        fi
+        echo "skip=false" >> $GITHUB_OUTPUT
+      continue-on-error: true
+
     - name: 🐍 Set up Python
+      if: steps.check_status.outputs.skip != 'true'
       uses: actions/setup-python@v5
       with:
         python-version: '3.x'
 
     - name: ⚡ Cache pip
+      if: steps.check_status.outputs.skip != 'true'
       uses: actions/cache@v4
       with:
         path: ~/.cache/pip
@@ -36,12 +58,14 @@ jobs:
           ${{ runner.os }}-pip-
 
     - name: 📦 Install dependencies
+      if: steps.check_status.outputs.skip != 'true'
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
       continue-on-error: true
 
     - name: 🏃 Run channel fetch script with retries
+      if: steps.check_status.outputs.skip != 'true'
       id: fetch_script
       env:
         AYNA_OTT_EMAIL: ${{ secrets.AYNA_OTT_EMAIL }}
@@ -53,7 +77,7 @@ jobs:
         SOCKS5_PROXY_USER: ${{ secrets.SOCKS5_PROXY_USER }}
         SOCKS5_PROXY_PASS: ${{ secrets.SOCKS5_PROXY_PASS }}
       run: |
-        MAX_ATTEMPTS=3
+        MAX_ATTEMPTS=2
         ATTEMPT=1
         
         while [ $ATTEMPT -le $MAX_ATTEMPTS ]; do
@@ -77,6 +101,7 @@ jobs:
       continue-on-error: true
 
     - name: ✅ Verify output files exist
+      if: steps.check_status.outputs.skip != 'true'
       id: verify_output
       run: |
         missing=0

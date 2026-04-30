@@ -21,10 +21,10 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Configuration
-MAX_RETRIES = 3
+MAX_RETRIES = 2
 RETRY_DELAY = 5  # seconds
 REQUEST_TIMEOUT = 30  # seconds
-MAX_WORKERS = 8  # Concurrent stream URL fetch workers
+MAX_WORKERS = 4  # Concurrent stream URL fetch workers (reduced from 8 for less resource use)
 ALLOWED_GROUPS = [
     "Business",
     "Documentary",

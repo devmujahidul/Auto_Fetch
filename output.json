@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-05-25T12:26:10.175855+06:00",
+  "created_at": "2026-05-25T17:02:13.897415+06:00",
   "disclaimer": "We do not host or serve any content. All channels and streams listed are publicly available from third-party providers.",
   "total_channels": 200,
   "server_total_reported": null,
@@ -25,7 +25,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/e8bb743022a2b6b0ee714bbdb2715cbe",
-      "url": "https://tvsen6.aynaott.com/dbcnews/index.m3u8?e=1779697456&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=e68c8bc65cd1b27e56ba8558162b5f56",
+      "url": "https://tvsen6.aynaott.com/dbcnews/index.m3u8?e=1779714010&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=def77be7eed4739a0563d75725547054",
       "group_title": "News",
       "region": "BD"
     },
@@ -50,7 +50,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/0229450bbd66d8e761566cd49d80c5fe",
-      "url": "https://tvsen6.aynaott.com/3abnkids/index.m3u8?e=1779697455&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=8f07a5d06e1b9f5b13d000b9d15f0cc5",
+      "url": "https://tvsen6.aynaott.com/3abnkids/index.m3u8?e=1779714011&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=2c18b365bf512d94c0c46c6d48e8baf6",
       "group_title": "Kids",
       "region": "US"
     },
@@ -75,7 +75,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/9435def30963cca4ae331beb1848395c",
-      "url": "https://tvsen7.aynaott.com/comedycentral/index.m3u8?e=1779697456&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=5be9d17a4a9ae8ae8bcdbbb8eaefc10b",
+      "url": "https://tvsen7.aynaott.com/comedycentral/index.m3u8?e=1779714010&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=e09d541d082050cac9d2019759fbed13",
       "group_title": "Entertainment",
       "region": "US"
     },
@@ -100,7 +100,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/a0ff3a0362844b45d87735302dcebc84",
-      "url": "https://tvsen7.aynaott.com/cooking/index.m3u8?e=1779697455&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=abd12fa971f590c2f2a4c32786b5b61b",
+      "url": "https://tvsen7.aynaott.com/cooking/index.m3u8?e=1779714010&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=042f9e0b6529efffa0d7c1bc77e2101d",
       "group_title": "Lifestyle",
       "region": "INT"
     },
@@ -125,7 +125,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/5db4a54244a315684254b441e92539e2",
-      "url": "https://tvsen5.aynaott.com/maasrangatv/index.m3u8?e=1779697457&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=4ca24d8a671c3300d229d2ca495b0f96",
+      "url": "https://tvsen5.aynaott.com/maasrangatv/index.m3u8?e=1779714013&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=745b6c6b4fa11aa17809cf8dbdac6d16",
       "group_title": "Entertainment",
       "region": "BD"
     },
@@ -175,7 +175,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/ee930f871ee3949c9f8a7a059ec91fe3",
-      "url": "https://tvsen6.aynaott.com/TheWeatherChannel/index.m3u8?e=1779697458&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=f4752fb173906e1c1f1dd4547f21f967",
+      "url": "https://tvsen6.aynaott.com/TheWeatherChannel/index.m3u8?e=1779714013&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=6621cd75059048667f49d29db55f52b2",
       "group_title": "Weather",
       "region": "US"
     },
@@ -200,7 +200,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/c672762900da39dc9eee15027accfb5c",
-      "url": "https://tvsen6.aynaott.com/nfl/index.m3u8?e=1779697458&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=57342ddc91a5ba2dbdd9bb01648f200c",
+      "url": "https://tvsen6.aynaott.com/nfl/index.m3u8?e=1779714013&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=ed5df1068ecf8a7aa72fb98651212f57",
       "group_title": "Sports",
       "region": "US"
     },
@@ -250,7 +250,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/affd223f023a705e3a1c5df263d0a7ef",
-      "url": "https://tvsen6.aynaott.com/channel9/index.m3u8?e=1779697460&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=d0b708878d8554f8fd28f027841711fd",
+      "url": "https://tvsen6.aynaott.com/channel9/index.m3u8?e=1779714015&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=82e28335e993082218ac4c32e9670084",
       "group_title": "Entertainment",
       "region": "BD"
     },
@@ -275,7 +275,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/589934eb6a1c264a0ee6bf6d82fad81c",
-      "url": "https://tvsen6.aynaott.com/bijoytv/index.m3u8?e=1779697460&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=78c04ad212fe735931ad596037c1b08e",
+      "url": "https://tvsen6.aynaott.com/bijoytv/index.m3u8?e=1779714016&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=1c4b9eb6ac5251c6d804385b33727956",
       "group_title": "Entertainment",
       "region": "BD"
     },
@@ -300,7 +300,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/5b22893ae4e816ef2cf87e63c96e9e08",
-      "url": "https://tvsen6.aynaott.com/banglatv/index.m3u8?e=1779697461&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=4ee3b1e43331a4d4a955adcdec9b96dd",
+      "url": "https://tvsen6.aynaott.com/banglatv/index.m3u8?e=1779714015&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=e94beb3219a788d04d3b4cc7daa01dee",
       "group_title": "Entertainment",
       "region": "BD"
     },
@@ -325,7 +325,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/a4026bfc5928a4abd66c10a5b8d07eba",
-      "url": "https://tvsen6.aynaott.com/NewsTime/index.m3u8?e=1779697462&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=62ba5841670fcea74642c68e4b2170e3",
+      "url": "https://tvsen6.aynaott.com/NewsTime/index.m3u8?e=1779714018&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=df1cfa9e832d71e6b9701705ce133b79",
       "group_title": "News",
       "region": "IN"
     },
@@ -350,7 +350,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/663c8079982ff6a45fc99e78c865a63d",
-      "url": "https://tvsen6.aynaott.com/mohonatv/index.m3u8?e=1779697463&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=ea24ac86846dbc664dfa28f4c6e46f4e",
+      "url": "https://tvsen6.aynaott.com/mohonatv/index.m3u8?e=1779714018&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=4710e1dcf2a8f586425d1b15296b08db",
       "group_title": "Entertainment",
       "region": "BD"
     },
@@ -375,7 +375,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/74e02cf4a1fbd11e78275d819779e7e1",
-      "url": "https://tvsen6.aynaott.com/kolkatatv/index.m3u8?e=1779697462&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=6ced9fd733e17ebc31c3adcdf6dd06f1",
+      "url": "https://tvsen6.aynaott.com/kolkatatv/index.m3u8?e=1779714018&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=6253a8566b966b3cd3e84d67c092e046",
       "group_title": "News",
       "region": "IN"
     },
@@ -400,7 +400,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/9dfa920526ae8597cd53f63c1d72d666",
-      "url": "https://tvsen6.aynaott.com/golfchannel/index.m3u8?e=1779697463&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=ad63ad1a3a5c782214fe27e5ab0fbe95",
+      "url": "https://tvsen6.aynaott.com/golfchannel/index.m3u8?e=1779714018&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=2c09bd8a4f3a8d32eac133e3181bf8d7",
       "group_title": "Sports",
       "region": "US"
     },
@@ -450,7 +450,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/3d07f0936fe1b859a2cb01d4f9469f3e",
-      "url": "https://tvsen7.aynaott.com/fx/index.m3u8?e=1779697465&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=6f7f04bf100f445ab06dfbf95b7b7b7c",
+      "url": "https://tvsen7.aynaott.com/fx/index.m3u8?e=1779714020&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=0e5b365956e830e5f92f9e49f8a3fa42",
       "group_title": "Entertainment",
       "region": "US"
     },
@@ -475,7 +475,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/20e835171a2d078ca6c678fc95bd4bbd",
-      "url": "https://tvsen6.aynaott.com/btvctg/index.m3u8?e=1779697465&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=fdf21471810115286d6575bb34f693bc",
+      "url": "https://tvsen6.aynaott.com/btvctg/index.m3u8?e=1779714021&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=1dc8eecc68a24a9503fb7421df3a42b7",
       "group_title": "Entertainment",
       "region": "BD"
     },
@@ -525,7 +525,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/a9c9febc6e5e849ddd0ac989fe02b0fa",
-      "url": "https://tvsen7.aynaott.com/syfy/index.m3u8?e=1779697467&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=fb42f1dc4efaf0c0b60de932fb53c5cb",
+      "url": "https://tvsen7.aynaott.com/syfy/index.m3u8?e=1779714023&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=98a902c2768c45065867af2fa27d98bf",
       "group_title": "Entertainment",
       "region": "US"
     },
@@ -550,7 +550,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/a4430d70a74aab1c1a284f4dae8131df",
-      "url": "https://tvsen5.aynaott.com/familyjr/index.m3u8?e=1779697467&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=6d5bf6558e326afced81e8b49c33a0e4",
+      "url": "https://tvsen5.aynaott.com/familyjr/index.m3u8?e=1779714023&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=1d932d5332d9175e95886bba159c3a68",
       "group_title": "Kids",
       "region": "INT"
     },
@@ -575,7 +575,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/7c6b0691027766c496ef8a64da1e216f",
-      "url": "https://tvsen7.aynaott.com/hgtv/index.m3u8?e=1779697468&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=42748673b0f2cff0e9724df35cdb8ec8",
+      "url": "https://tvsen7.aynaott.com/hgtv/index.m3u8?e=1779714023&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=bfb39c7d5d3d7fdee3d9c2c5dc389925",
       "group_title": "Lifestyle",
       "region": "US"
     },
@@ -600,7 +600,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/6c897d97bb157cb69096cffd1163faff",
-      "url": "https://tvsen6.aynaott.com/foodnetwork/index.m3u8?e=1779697468&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=808052fd440c327ba569160d73679d92",
+      "url": "https://tvsen6.aynaott.com/foodnetwork/index.m3u8?e=1779714023&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=01fc2113ed9803603761953014e06159",
       "group_title": "Lifestyle",
       "region": "US"
     },
@@ -625,7 +625,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/b185ee61feb0bdd25924e8cee5169507",
-      "url": "https://tvsen7.aynaott.com/bravo/index.m3u8?e=1779697469&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=6a76c9703f591abfd34b7d0aa90612dc",
+      "url": "https://tvsen7.aynaott.com/bravo/index.m3u8?e=1779714025&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=04cd082d4b90538ed228ed209aa2cda9",
       "group_title": "Entertainment",
       "region": "US"
     },
@@ -675,7 +675,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/286e8ac3723edb19f7ea7b07dd33fdde",
-      "url": "https://tvsen6.aynaott.com/eman/index.m3u8?e=1779697470&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=999bc26bb79247665ecbf442a0669fd2",
+      "url": "https://tvsen6.aynaott.com/eman/index.m3u8?e=1779714026&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=ffc680ed391c3d08064090688b53781f",
       "group_title": "Religious",
       "region": "UK"
     },
@@ -700,7 +700,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/62f74ecbaa7ae32fc35fbaea42fe4d29",
-      "url": "https://tvsen7.aynaott.com/deen/index.m3u8?e=1779697470&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=9f63aa065d71b909a421b1a589b5058c",
+      "url": "https://tvsen7.aynaott.com/deen/index.m3u8?e=1779714025&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=3aa9d8070da06ce57cbd65a2aa30f67a",
       "group_title": "Religious",
       "region": "INT"
     },
@@ -725,7 +725,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/5d33e8abef6707f38350bf94172007ac",
-      "url": "https://tvsen6.aynaott.com/9xjalwa/index.m3u8?e=1779697471&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=37e8f32fc5015b04958888064d7e6efa",
+      "url": "https://tvsen6.aynaott.com/9xjalwa/index.m3u8?e=1779714028&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=90d3b40f1af5912b0064f878963cd5d8",
       "group_title": "Music",
       "region": "IN"
     },
@@ -775,7 +775,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/60fb7c185546fa52900f1c976ed567f6",
-      "url": "https://tvsen6.aynaott.com/SadhnaPrimeNews/index.m3u8?e=1779697472&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=9f24dd5def6be8e7710cade705d24977",
+      "url": "https://tvsen6.aynaott.com/SadhnaPrimeNews/index.m3u8?e=1779714028&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=8f90479d8f7a54f296b8499c46a9f3e8",
       "group_title": "News",
       "region": "IN"
     },
@@ -800,7 +800,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/f69ebc31d4b3e6302515a9d6befb1973",
-      "url": "https://tvsen6.aynaott.com/News1India/index.m3u8?e=1779697472&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=3c6c99bfee6202000caf421a28d57e95",
+      "url": "https://tvsen6.aynaott.com/News1India/index.m3u8?e=1779714028&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=7323cd3d0e1dd6aef93239e2d9f9c867",
       "group_title": "News",
       "region": "IN"
     },
@@ -850,7 +850,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/4d7d15dd5a6b8bbe5b43bdf7598bf831",
-      "url": "https://tvsen6.aynaott.com/btSport1/index.m3u8?e=1779697474&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=487d992e64f8106d2279011a7b2b2050",
+      "url": "https://tvsen6.aynaott.com/btSport1/index.m3u8?e=1779714030&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=034e0cd75900a74ccdf2646071826bfe",
       "group_title": "Sports",
       "region": "UK"
     },
@@ -875,7 +875,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/68f655a765e55c45ef9d086cec71606c",
-      "url": "https://tvsen5.aynaott.com/R_Bangla/index.m3u8?e=1779697475&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=0aa3bf3bc9634d4248b48a983d7ec2f0",
+      "url": "https://tvsen5.aynaott.com/R_Bangla/index.m3u8?e=1779714030&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=a6696a2f4675abcf1e798719d7f162ce",
       "group_title": "News",
       "region": "IN"
     },
@@ -900,7 +900,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/8f72b7b45026c70cf2dd23aa187f5d45",
-      "url": "https://tvsen6.aynaott.com/zee24/index.m3u8?e=1779697474&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=3dbedb71738704e8a27f512ddf164f2e",
+      "url": "https://tvsen6.aynaott.com/zee24/index.m3u8?e=1779714031&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=10c6d62c7f9963f905b5a48ba24035ef",
       "group_title": "News",
       "region": "IN"
     },
@@ -925,7 +925,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/80fe88a811ebcd50a7fd8271bfe6382d",
-      "url": "https://tvsen6.aynaott.com/btSport2/index.m3u8?e=1779697476&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=1cc9148eb322d99e4618193c64f61fa2",
+      "url": "https://tvsen6.aynaott.com/btSport2/index.m3u8?e=1779714033&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=e4c5bb1a250428d28a69bf54ba416093",
       "group_title": "Sports",
       "region": "UK"
     },
@@ -950,7 +950,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/5acec30ce56099ac991cc2ed289aa920",
-      "url": "https://tvsen6.aynaott.com/RplusGold/index.m3u8?e=1779697476&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=f7cbbac53232b9bac5cfbea3ccfe2bac",
+      "url": "https://tvsen6.aynaott.com/RplusGold/index.m3u8?e=1779714033&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=ed01160159b4cae2e7b0f2503923d042",
       "group_title": "News",
       "region": "IN"
     },
@@ -975,7 +975,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/5c1c4226b2c12b3c0bb3c258700f72d0",
-      "url": "https://tvsen6.aynaott.com/fox5/index.m3u8?e=1779697477&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=61bcee82b3ed9e95f32a67508deef201",
+      "url": "https://tvsen6.aynaott.com/fox5/index.m3u8?e=1779714033&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=60625667c212417d1503b9e266261d6e",
       "group_title": "News",
       "region": "US"
     },
@@ -1000,7 +1000,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/a937f1337f26a5d6be1b0a6a2a8be6be",
-      "url": "https://tvsen6.aynaott.com/CricketGold/index.m3u8?e=1779697477&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=30114d3e6387f6effa551f5e0e1388d5",
+      "url": "https://tvsen6.aynaott.com/CricketGold/index.m3u8?e=1779714033&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=58fcb04fc8d607e11886dfc919d7deb6",
       "group_title": "Sports",
       "region": "INT"
     },
@@ -1050,7 +1050,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/31c1a7c92224ec3e75190ec35d772f93",
-      "url": "https://tvsen6.aynaott.com/RepublicTVBharat/index.m3u8?e=1779697478&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=2d2b5662bf410ae92b0d506e631da681",
+      "url": "https://tvsen6.aynaott.com/RepublicTVBharat/index.m3u8?e=1779714035&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=5f5a56eb0428150452921faf95fcde0c",
       "group_title": "News",
       "region": "IN"
     },
@@ -1075,7 +1075,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/1552fc09ba15bbdb0f5305e29cb1db98",
-      "url": "https://tvsen7.aynaott.com/tsn1/index.m3u8?e=1779697479&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=1e10fa8b65e195ea835f42ae5f5752b5",
+      "url": "https://tvsen7.aynaott.com/tsn1/index.m3u8?e=1779714035&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=31955f7fe8213b78294252d875c9c60e",
       "group_title": "Sports",
       "region": "INT"
     },
@@ -1100,7 +1100,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/9cd1bbbc2a4e8e3f5258f2df42dcdaf5",
-      "url": "https://tvsen6.aynaott.com/pix11/index.m3u8?e=1779697479&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=c11af417014ec8350e5d13c9fe119d7a",
+      "url": "https://tvsen6.aynaott.com/pix11/index.m3u8?e=1779714036&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=ddeef70b18fc06c98ac19dd0fbad12fc",
       "group_title": "News",
       "region": "US"
     },
@@ -1125,7 +1125,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/9fbf3e9ed22c8cc71c93f25d6cb9be32",
-      "url": "https://tvsen7.aynaott.com/tsports-hd/index.m3u8?e=1779697481&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=d6c372ff9c4145a55b7ba02d6b91bbbc",
+      "url": "https://tvsen7.aynaott.com/tsports-hd/index.m3u8?e=1779714037&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=cc062a01cd53f7a140d5d1b52674f85c",
       "group_title": "Sports",
       "region": "BD"
     },
@@ -1150,7 +1150,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/ec104f6c336daca0e318a729f181e5b2",
-      "url": "https://tvsen5.aynaott.com/willowhd/index.m3u8?e=1779697481&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=c23dbc19c914e954b4491241cee1121d",
+      "url": "https://tvsen5.aynaott.com/willowhd/index.m3u8?e=1779714038&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=4ff1161d8b9935b6371ed157b110b7a6",
       "group_title": "Sports",
       "region": "US"
     },
@@ -1175,7 +1175,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/4a8c4ef5769fdd11b640dcf5795221bd",
-      "url": "https://tvsen6.aynaott.com/usa/index.m3u8?e=1779697482&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=968258359e843425c143855289c43c10",
+      "url": "https://tvsen6.aynaott.com/usa/index.m3u8?e=1779714038&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=e0f4455ebcb2d8bb830afcdc467b233e",
       "group_title": "Entertainment",
       "region": "US"
     },
@@ -1200,7 +1200,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/dcd3d2b430a0a2b2949cacaa5486d850",
-      "url": "https://tvsen6.aynaott.com/tlc_hd/index.m3u8?e=1779697481&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=75097533d962a084ef93747e5f8f8faa",
+      "url": "https://tvsen6.aynaott.com/tlc_hd/index.m3u8?e=1779714039&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=633fbaf2463359c54f42e44daf0fa3fc",
       "group_title": "Lifestyle",
       "region": "US"
     },
@@ -1225,7 +1225,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/d1c5e1f2498dbc018610f1586ab660e5",
-      "url": "https://tvsen6.aynaott.com/cnn/index.m3u8?e=1779697483&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=b4eabff2884608b678a9c89b482484ba",
+      "url": "https://tvsen6.aynaott.com/cnn/index.m3u8?e=1779714039&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=3fd1f4ec1ad3568698fe7270dd17cd1f",
       "group_title": "News",
       "region": "US"
     },
@@ -1275,7 +1275,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/1286549bfbdf6c3b4ff1f259b4d52bb4",
-      "url": "https://tvsen5.aynaott.com/discoveryfamily/index.m3u8?e=1779697484&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=4f8e41120b50151b2ed54713c85de29b",
+      "url": "https://tvsen5.aynaott.com/discoveryfamily/index.m3u8?e=1779714041&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=8b651ba6e3f5a9d7fe175b73a0fe6ddd",
       "group_title": "Documentary",
       "region": "US"
     },
@@ -1300,7 +1300,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/a8f87ac6b4731011dcc61c957f56d47b",
-      "url": "https://tvsen6.aynaott.com/btvhd/index.m3u8?e=1779697484&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=b71864a5ebf9ca01a509ba53d40685ea",
+      "url": "https://tvsen6.aynaott.com/btvhd/index.m3u8?e=1779714041&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=6677614f18943e301618378e55f00e3a",
       "group_title": "Entertainment",
       "region": "BD"
     },
@@ -1325,7 +1325,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/e6a7b2f60f6b1f0012bcf14140341435",
-      "url": "https://tvsen6.aynaott.com/travelxp/index.m3u8?e=1779697485&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=2325d3b6e0e1a14a3225b42ced0842ca",
+      "url": "https://tvsen6.aynaott.com/travelxp/index.m3u8?e=1779714042&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=7bb65ce7054a1a54244d54946521e77e",
       "group_title": "Lifestyle",
       "region": "US"
     },
@@ -1350,7 +1350,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/cabc2f03e8c2f85c6d088eab4bb0833a",
-      "url": "https://tvsen7.aynaott.com/takbeer/index.m3u8?e=1779697486&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=217c98343b0b9acbe14f692dd882eefd",
+      "url": "https://tvsen7.aynaott.com/takbeer/index.m3u8?e=1779714042&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=9daa9b5b559d2af752bd12423aaf1041",
       "group_title": "Religious",
       "region": "UK"
     },
@@ -1450,7 +1450,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/08ea1ff4e3ac6e32678e90d9e1fcff61",
-      "url": "https://tvsen6.aynaott.com/talkSPORT/index.m3u8?e=1779697488&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=6237ede5399060724698570c0102c9bf",
+      "url": "https://tvsen6.aynaott.com/talkSPORT/index.m3u8?e=1779714045&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=f38e0db4d15b7e201c18a425ee847019",
       "group_title": "Sports",
       "region": "UK"
     },
@@ -1475,7 +1475,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/502b8de24fcfc4443c376270a6e45527",
-      "url": "https://tvsen6.aynaott.com/channel24/index.m3u8?e=1779697488&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=b73441eca2a5033f526b0bf35f2f7967",
+      "url": "https://tvsen6.aynaott.com/channel24/index.m3u8?e=1779714046&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=e81e20d7bfc1bda4089356819d8e234b",
       "group_title": "News",
       "region": "BD"
     },
@@ -1500,7 +1500,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/544a69f01c5cdfb1647fb2805dba72a5",
-      "url": "https://tvsen6.aynaott.com/foxbusiness/index.m3u8?e=1779697489&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=a03eae65c4b93c6e686e7e3389a5fabc",
+      "url": "https://tvsen6.aynaott.com/foxbusiness/index.m3u8?e=1779714046&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=efc78dcf8982e4ab4774367c559ef6dc",
       "group_title": "Business",
       "region": "US"
     },
@@ -1550,7 +1550,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/498a04d4cec05dfc06989b7a0a84bcc1",
-      "url": "https://tvsen7.aynaott.com/foxsports2/index.m3u8?e=1779697490&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=2826167e35f43de71bdcfa6daec33492",
+      "url": "https://tvsen7.aynaott.com/foxsports2/index.m3u8?e=1779714048&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=63e1137bcde47582e782403e287a4155",
       "group_title": "Sports",
       "region": "US"
     },
@@ -1575,7 +1575,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/4e21114ecbe7c117e3e6fd31a062bb71",
-      "url": "https://tvsen6.aynaott.com/cp24/index.m3u8?e=1779697490&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=ccd747900bcea34b55d9e77753171382",
+      "url": "https://tvsen6.aynaott.com/cp24/index.m3u8?e=1779714048&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=1de566c134aa734336f44762d7efa80c",
       "group_title": "News",
       "region": "INT"
     },
@@ -1600,7 +1600,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/db85422953e3a1652e26b0a14eed92a9",
-      "url": "https://tvsen6.aynaott.com/nexustv/index.m3u8?e=1779697491&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=d301161d58069cc02bdaf2bdc74aece2",
+      "url": "https://tvsen6.aynaott.com/nexustv/index.m3u8?e=1779714048&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=c2ef35f5edc0be448bd447954d0c47dc",
       "group_title": "Entertainment",
       "region": "US"
     },
@@ -1625,7 +1625,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/18c65f48bb15b1e59a8d91b8d1675122",
-      "url": "https://tvsen6.aynaott.com/jamunatv/index.m3u8?e=1779697492&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=2cb92fb0b401dca99c4a0db2e0010d1c",
+      "url": "https://tvsen6.aynaott.com/jamunatv/index.m3u8?e=1779714050&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=e3cd681f9d76d33f60d5493c63e52e79",
       "group_title": "News",
       "region": "BD"
     },
@@ -1650,7 +1650,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/3817227a6b180dc147a89c2b667acf50",
-      "url": "https://tvsen5.aynaott.com/disneyxd/index.m3u8?e=1779697493&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=a98435ed021ae1c444f335f8e0ee8483",
+      "url": "https://tvsen5.aynaott.com/disneyxd/index.m3u8?e=1779714050&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=2ff7f1421f5464dab6152534eec54f3c",
       "group_title": "Kids",
       "region": "US"
     },
@@ -1675,7 +1675,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/c69d4851784c5fefa6d0117653d227c3",
-      "url": "https://tvsen6.aynaott.com/ekattorbdtv/index.m3u8?e=1779697493&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=059c392c230fd5edfdd43f8fde19a5a6",
+      "url": "https://tvsen6.aynaott.com/ekattorbdtv/index.m3u8?e=1779714050&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=560c70e882c879edd4b76be0f403b73c",
       "group_title": "News",
       "region": "BD"
     },
@@ -1700,7 +1700,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/9ef657aca7c0009e4f0675af3b5190d8",
-      "url": "https://tvsen6.aynaott.com/deshtv/index.m3u8?e=1779697494&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=fc4a9862cbe26932661b95a735129a6a",
+      "url": "https://tvsen6.aynaott.com/deshtv/index.m3u8?e=1779714051&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=8207a54f4fc67c05479affa691d31ea0",
       "group_title": "Entertainment",
       "region": "BD"
     },
@@ -1725,7 +1725,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/b102f206ea73dfdbc591e9cf6c8c478d",
-      "url": "https://tvsen6.aynaott.com/news24/index.m3u8?e=1779697494&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=7f97f6066e0e8c16c7570660460f4003",
+      "url": "https://tvsen6.aynaott.com/news24/index.m3u8?e=1779714052&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=66cede6a6f0c345963e5af5d8b690778",
       "group_title": "News",
       "region": "BD"
     },
@@ -1750,7 +1750,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/8faf522ac37bfcd9c163145f77a9a024",
-      "url": "https://tvsen6.aynaott.com/asiantv/index.m3u8?e=1779697495&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=8717320b04b2a80a6f4fbc7a345513c5",
+      "url": "https://tvsen6.aynaott.com/asiantv/index.m3u8?e=1779714053&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=6cefbcf8f470b05a5cb8b0ef4e5ed0c3",
       "group_title": "Entertainment",
       "region": "BD"
     },
@@ -1775,7 +1775,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/0b4d83d0baf7513beae135e134fced2c",
-      "url": "https://tvsen5.aynaott.com/Ravc7gPCZpxk/index.m3u8?e=1779697495&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=6d4d1e521d1e87d2a647c1771221fff4",
+      "url": "https://tvsen5.aynaott.com/Ravc7gPCZpxk/index.m3u8?e=1779714053&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=a6927925c4cce1f5b0c90b26d4c510fb",
       "group_title": "Entertainment",
       "region": "BD"
     },
@@ -1800,7 +1800,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/f32cb68f73e383cf0e3f12ad2732b902",
-      "url": "https://tvsen6.aynaott.com/asports/index.m3u8?e=1779697496&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=f129f5a1dee3d588564af2821045f575",
+      "url": "https://tvsen6.aynaott.com/asports/index.m3u8?e=1779714054&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=2750a664ec17a511f1efd807d4b443a4",
       "group_title": "Sports",
       "region": "PK"
     },
@@ -1825,7 +1825,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/8e9db8284bf110dce597f48674d1968a",
-      "url": "https://tvsen6.aynaott.com/atnnews/index.m3u8?e=1779697497&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=b41a998b43ac84110c79c4ece8ee6ed7",
+      "url": "https://tvsen6.aynaott.com/atnnews/index.m3u8?e=1779714055&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=28d2856dfca2c1074d42f404723fa7ed",
       "group_title": "News",
       "region": "BD"
     },
@@ -1850,7 +1850,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/a03665c6ba5aae42a29ad700effdcfca",
-      "url": "https://tvsen6.aynaott.com/btv_world/index.m3u8?e=1779697497&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=4031eebfce8b358ce9eaa25d73083dbd",
+      "url": "https://tvsen6.aynaott.com/btv_world/index.m3u8?e=1779714055&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=cb0b7cae83bc205e038df209e0f0aa57",
       "group_title": "Entertainment",
       "region": "BD"
     },
@@ -1900,7 +1900,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/bda05e1c2173251baebc20ffe43dea0b",
-      "url": "https://tvsen6.aynaott.com/globaltvhd/index.m3u8?e=1779697498&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=b89ae12cb88be391449d20175e5add26",
+      "url": "https://tvsen6.aynaott.com/globaltvhd/index.m3u8?e=1779714056&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=fe89582fb96940e2acd13731ca18a6e4",
       "group_title": "Entertainment",
       "region": "BD"
     },
@@ -1925,7 +1925,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/1d3d06e02fc9ba45a990b65aebd04ebc",
-      "url": "https://tvsen6.aynaott.com/durontotv-live/index.m3u8?e=1779697499&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=c9cc899bdc3082ca8e2e1e60866ca608",
+      "url": "https://tvsen6.aynaott.com/durontotv-live/index.m3u8?e=1779714057&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=a3089c00993571d2eca2f7dde59a0639",
       "group_title": "Kids",
       "region": "BD"
     },
@@ -1950,7 +1950,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/2576d772b73b7bc7535cdfe4c656a56f",
-      "url": "https://tvsen5.aynaott.com/hbo/index.m3u8?e=1779697499&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=0d6eb069906ad666c9c1eb51507add02",
+      "url": "https://tvsen5.aynaott.com/hbo/index.m3u8?e=1779714058&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=4366829c61630a4dff5b6e46a9e5d153",
       "group_title": "Movies",
       "region": "US"
     },
@@ -2000,7 +2000,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/23190c1fbf811928410cf917250d6aa2",
-      "url": "https://tvsen6.aynaott.com/Dhinchaak/index.m3u8?e=1779697500&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=ca96de598c51936736a5893e65cc1b10",
+      "url": "https://tvsen6.aynaott.com/Dhinchaak/index.m3u8?e=1779714059&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=b0d403299d8c13ea201b65e362f341ed",
       "group_title": "Movies",
       "region": "IN"
     },
@@ -2025,7 +2025,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/83774f423a5661d9456601fb7c7164e3",
-      "url": "https://tvsen6.aynaott.com/amc/index.m3u8?e=1779697501&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=4f39f0632fe45bd384d48953c367f655",
+      "url": "https://tvsen6.aynaott.com/amc/index.m3u8?e=1779714059&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=c9570946e4fb48ad73a1049bbe8aa11e",
       "group_title": "Movies",
       "region": "US"
     },
@@ -2075,7 +2075,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/f8c19ede8d86895e54e804d2731e81b4",
-      "url": "https://tvsen6.aynaott.com/msnbc/index.m3u8?e=1779697502&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=1e62707149ecd082ab758b368c08881c",
+      "url": "https://tvsen6.aynaott.com/msnbc/index.m3u8?e=1779714060&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=8e341be33b17974d5a9109d44222b58f",
       "group_title": "News",
       "region": "US"
     },
@@ -2100,7 +2100,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/9dc7c7df79789e885fb298bcb58b703b",
-      "url": "https://tvsen6.aynaott.com/axs/index.m3u8?e=1779697503&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=c43ace49c8a52eae275718d9ec0abb18",
+      "url": "https://tvsen6.aynaott.com/axs/index.m3u8?e=1779714061&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=4ee862705d415187853ebcce0c792702",
       "group_title": "Music",
       "region": "US"
     },
@@ -2125,7 +2125,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/16a04b881a4c2968a04af7aececa6293",
-      "url": "https://tvsen7.aynaott.com/hbo2/index.m3u8?e=1779697503&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=79fd5b764d3481644ee43769374fc130",
+      "url": "https://tvsen7.aynaott.com/hbo2/index.m3u8?e=1779714062&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=e6ebb684bf06188e93d5e6f617776d62",
       "group_title": "Movies",
       "region": "US"
     },
@@ -2150,7 +2150,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/bdea542ab8e7e690eadafe19b9fda890",
-      "url": "https://tvsen7.aynaott.com/laff/index.m3u8?e=1779697504&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=07aa94be50bd73c31fac3590e71a7971",
+      "url": "https://tvsen7.aynaott.com/laff/index.m3u8?e=1779714063&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=a73f41eee83d7c70c7f41610c47aac35",
       "group_title": "Entertainment",
       "region": "US"
     },
@@ -2175,7 +2175,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/9bf1ba0b8818b41171793a48c165c9f3",
-      "url": "https://tvsen7.aynaott.com/timetv/index.m3u8?e=1779697504&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=666014a6272d51b2ccfd29aebdda24b0",
+      "url": "https://tvsen7.aynaott.com/timetv/index.m3u8?e=1779714063&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=f48a9ce9c685eca677f9202a5268198b",
       "group_title": "News",
       "region": "US"
     },
@@ -2200,7 +2200,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/73c39182782a201338070c2f4429e449",
-      "url": "https://tvsen5.aynaott.com/ntvbd/index.m3u8?e=1779697505&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=663c73a078fd7358c66612f2db65ecfa",
+      "url": "https://tvsen5.aynaott.com/ntvbd/index.m3u8?e=1779714064&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=a6d31c19dab26670d601b8b271c51fe4",
       "group_title": "Entertainment",
       "region": "BD"
     },
@@ -2225,7 +2225,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/f35737db9b254d12a393044bb17ee529",
-      "url": "https://tvsen7.aynaott.com/ibtvusa/index.m3u8?e=1779697505&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=219d2248101e6a378dd8c595d877234d",
+      "url": "https://tvsen7.aynaott.com/ibtvusa/index.m3u8?e=1779714064&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=dc66c75f19c337298194e3865898671c",
       "group_title": "Entertainment",
       "region": "US"
     },
@@ -2250,7 +2250,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/cb1a6dd677fb40e88847218c047d6bc3",
-      "url": "https://tvsen6.aynaott.com/Network10/index.m3u8?e=1779697507&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=826e4230b9bae715f2d4bb34917becac",
+      "url": "https://tvsen6.aynaott.com/Network10/index.m3u8?e=1779714065&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=0fe2290733d96671bb4d50143143b674",
       "group_title": "Entertainment",
       "region": "INT"
     },
@@ -2275,7 +2275,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/92ffa78d159f3dd8bb3b99676ba58d0f",
-      "url": "https://tvsen7.aynaott.com/lifetime/index.m3u8?e=1779697507&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=2d39c58ca23bd754a9bc705ea2e1cde5",
+      "url": "https://tvsen7.aynaott.com/lifetime/index.m3u8?e=1779714065&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=c16ab84b0b5eb58315fc6c9ff8532181",
       "group_title": "Lifestyle",
       "region": "US"
     },
@@ -2300,7 +2300,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/d93b76211f818fcce66e7f44119ce0be",
-      "url": "https://tvsen6.aynaott.com/mytv/index.m3u8?e=1779697508&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=c9dbb0c69618b805d6ec76fe73877a1d",
+      "url": "https://tvsen6.aynaott.com/mytv/index.m3u8?e=1779714067&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=aee0d1a43d291296dda6310ec97a2b74",
       "group_title": "Entertainment",
       "region": "BD"
     },
@@ -2375,7 +2375,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/6f8c834cf47cf1501a62581699732319",
-      "url": "https://tvsen7.aynaott.com/cbs/index.m3u8?e=1779697509&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=6278de66b03411518d2b308b58a1d065",
+      "url": "https://tvsen7.aynaott.com/cbs/index.m3u8?e=1779714068&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=94b26106c21a07e8edb35729fa3bc52a",
       "group_title": "Entertainment",
       "region": "US"
     },
@@ -2400,7 +2400,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/1fbfc7fa968ff490b35b7b5cf1db4508",
-      "url": "https://tvsen6.aynaott.com/mtv/index.m3u8?e=1779697510&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=aefa2514a6f3daaef6f41b8fe5bdea6f",
+      "url": "https://tvsen6.aynaott.com/mtv/index.m3u8?e=1779714069&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=88df0abbdf4167e76cd85890752c02c3",
       "group_title": "Music",
       "region": "US"
     },
@@ -2425,7 +2425,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/3f861fcc2ab5cbd79237ceebf0f33e36",
-      "url": "https://tvsen6.aynaott.com/SportsGrid/index.m3u8?e=1779697510&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=e529c73534b8458f898d73c6fc5c33fe",
+      "url": "https://tvsen6.aynaott.com/SportsGrid/index.m3u8?e=1779714069&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=e14b083cc66660c2f0254c09960656cb",
       "group_title": "Sports",
       "region": "US"
     },
@@ -2475,7 +2475,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/80d0b169bd027e8bf54a5e75f31d1d75",
-      "url": "https://tvsen5.aynaott.com/cartoonnetwork/index.m3u8?e=1779697511&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=6cad77d2dd3475dcfd97724c6be03cd6",
+      "url": "https://tvsen5.aynaott.com/cartoonnetwork/index.m3u8?e=1779714070&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=ceaa295c98c2a73d735df2eacbaabbba",
       "group_title": "Kids",
       "region": "US"
     },
@@ -2500,7 +2500,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/67a48ff99e888817617ed26665586776",
-      "url": "https://tvsen6.aynaott.com/natgeo/index.m3u8?e=1779697512&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=644b9c9baf0d786889b6af7eea541e90",
+      "url": "https://tvsen6.aynaott.com/natgeo/index.m3u8?e=1779714071&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=628f7511bf4a726cf013289fe7343fb8",
       "group_title": "Documentary",
       "region": "US"
     },
@@ -2525,7 +2525,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/0880d5e60287318406fff86322916ff7",
-      "url": "https://tvsen6.aynaott.com/cnbc/index.m3u8?e=1779697512&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=cc535db00853bd12c42e66c8ab1efabf",
+      "url": "https://tvsen6.aynaott.com/cnbc/index.m3u8?e=1779714072&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=d47a4be264474163b2ac988721f20739",
       "group_title": "Business",
       "region": "US"
     },
@@ -2550,7 +2550,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/476f46af0a34cb2360f8f3fd95379b85",
-      "url": "https://tvsen6.aynaott.com/cgtnDocumentary/index.m3u8?e=1779697514&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=b5d408dbb1cb04e82fea7ca9285679a6",
+      "url": "https://tvsen6.aynaott.com/cgtnDocumentary/index.m3u8?e=1779714072&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=bf42e9b51fe83b93248078882e12e11a",
       "group_title": "Documentary",
       "region": "INT"
     },
@@ -2575,7 +2575,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/4a87c14e67270d043613800c5d7b6251",
-      "url": "https://tvsen6.aynaott.com/bloombergtv/index.m3u8?e=1779697513&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=6bf3af0a1a28e78c9af95af77fc87aa2",
+      "url": "https://tvsen6.aynaott.com/bloombergtv/index.m3u8?e=1779714073&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=be5b9b9b443ddcf5313f70ba56e7cc59",
       "group_title": "Business",
       "region": "US"
     },
@@ -2650,7 +2650,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/281200f1a1a49c2210c9ae059fc77826",
-      "url": "https://tvsen7.aynaott.com/AssamTalks/index.m3u8?e=1779697516&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=472f72d16cf2cb73e4823b16f0bea7b0",
+      "url": "https://tvsen7.aynaott.com/AssamTalks/index.m3u8?e=1779714074&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=d7b3f93ad6c2154f7f652f6eccf79e66",
       "group_title": "News",
       "region": "IN"
     },
@@ -2675,7 +2675,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/ec66cdf9538da75b08112f9ae2f151bc",
-      "url": "https://tvsen6.aynaott.com/boishakhitv/index.m3u8?e=1779697516&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=1dcc80b340198e9f09f4c33bbc69282a",
+      "url": "https://tvsen6.aynaott.com/boishakhitv/index.m3u8?e=1779714075&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=51cd74d691d3591b81fffa2836d3dbd4",
       "group_title": "Entertainment",
       "region": "BD"
     },
@@ -2700,7 +2700,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/fd634ca672c8294f109225ca42d20991",
-      "url": "https://tvsen5.aynaott.com/RtvHD/index.m3u8?e=1779697517&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=9a064b0b30c33ad1dcdf13007e105378",
+      "url": "https://tvsen5.aynaott.com/RtvHD/index.m3u8?e=1779714076&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=8748e674afcd09d38c8e0b153fc92814",
       "group_title": "Entertainment",
       "region": "BD"
     },
@@ -2725,7 +2725,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/8bf8ccf7bc01db3b8c4bc8576fb16f9d",
-      "url": "https://tvsen7.aynaott.com/disneyjr/index.m3u8?e=1779697517&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=64c90376f3ad1c1f8ac0db905ab79655",
+      "url": "https://tvsen7.aynaott.com/disneyjr/index.m3u8?e=1779714077&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=3a5a42ad1a95931888bf082ce61c0368",
       "group_title": "Kids",
       "region": "US"
     },
@@ -2750,7 +2750,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/d805cf57543080b49de8a2621cd54da4",
-      "url": "https://tvsen6.aynaott.com/etv/index.m3u8?e=1779697518&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=f86c58e3a1f25a7275b6beb634d2db86",
+      "url": "https://tvsen6.aynaott.com/etv/index.m3u8?e=1779714077&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=3f9d69c021300ed1dae0ed1065ea47b1",
       "group_title": "Entertainment",
       "region": "BD"
     },
@@ -2775,7 +2775,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/d3e8d014002832d32c029f445c105aae",
-      "url": "https://tvsen5.aynaott.com/nicktoons/index.m3u8?e=1779697518&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=8cd800712c7402a5eddc79810907d0d7",
+      "url": "https://tvsen5.aynaott.com/nicktoons/index.m3u8?e=1779714078&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=b985c99bf123d105198f858e386ecd2a",
       "group_title": "Kids",
       "region": "US"
     },
@@ -2800,7 +2800,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/722bc45fb2bc26f967c2e22714095ad5",
-      "url": "https://tvsen5.aynaott.com/nickjr/index.m3u8?e=1779697519&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=212ab394dc17c0f4c9f4d63e2f3c314f",
+      "url": "https://tvsen5.aynaott.com/nickjr/index.m3u8?e=1779714078&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=33a35c18aafde15db71be63fc433229f",
       "group_title": "Kids",
       "region": "US"
     },
@@ -2825,7 +2825,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/cbadf009eebf7506c7633b3a98a2f042",
-      "url": "https://tvsen6.aynaott.com/somoytv/index.m3u8?e=1779697520&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=4afb04e9e731b0e00cc2212f5352131a",
+      "url": "https://tvsen6.aynaott.com/somoytv/index.m3u8?e=1779714079&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=bd2606bbf4ab5cda78ae0505512eeaa5",
       "group_title": "News",
       "region": "BD"
     },
@@ -2850,7 +2850,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/12462ef0383fa0e927215d56cd51acf8",
-      "url": "https://tvsen5.aynaott.com/DeeptoTVHD/index.m3u8?e=1779697520&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=9e11cc13245d4ee1f462c4a853e2943f",
+      "url": "https://tvsen5.aynaott.com/DeeptoTVHD/index.m3u8?e=1779714080&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=30846886c1105d4333fec77bfbb59485",
       "group_title": "Entertainment",
       "region": "BD"
     },
@@ -2875,7 +2875,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/a4d2bbdb65b4abc239eaddedda1e5d22",
-      "url": "https://tvsen5.aynaott.com/atnbangla/index.m3u8?e=1779697521&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=02f8113f62ab95ea212b318beeec9804",
+      "url": "https://tvsen5.aynaott.com/atnbangla/index.m3u8?e=1779714080&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=582f0717daa55866adfb3fd939b5f936",
       "group_title": "Entertainment",
       "region": "BD"
     },
@@ -2900,7 +2900,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/28931315743beff50fc2c1312b1f8261",
-      "url": "https://tvsen6.aynaott.com/channeli/index.m3u8?e=1779697521&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=1fa0a3156c7d724f6adefbc7c1f4f6db",
+      "url": "https://tvsen6.aynaott.com/channeli/index.m3u8?e=1779714081&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=492474522c8da26c36bad47233eeb073",
       "group_title": "Entertainment",
       "region": "BD"
     },
@@ -2925,7 +2925,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/83796140b05a889d37c4c98ed8c43821",
-      "url": "https://tvsen6.aynaott.com/satv/index.m3u8?e=1779697522&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=1833b99dfa10e90902b44f1736857f9d",
+      "url": "https://tvsen6.aynaott.com/satv/index.m3u8?e=1779714082&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=2fa6b4154b42e50ad8bc9270c9821354",
       "group_title": "Entertainment",
       "region": "BD"
     },
@@ -2950,7 +2950,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/dc6dfbda1b1fe9b075a3d559c089fb43",
-      "url": "https://tvsen7.aynaott.com/tsn3/index.m3u8?e=1779697522&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=695dd42d3c2c0917471ed836a28fcf6a",
+      "url": "https://tvsen7.aynaott.com/tsn3/index.m3u8?e=1779714082&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=adb0aa2302acfca5d51dd261f015ea47",
       "group_title": "Sports",
       "region": "INT"
     },
@@ -2975,7 +2975,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/94ff4123b6c533d0332d63944ccf5868",
-      "url": "https://tvsen6.aynaott.com/ekhontv/index.m3u8?e=1779697523&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=b97f3af229363a1ee58d26b088202f65",
+      "url": "https://tvsen6.aynaott.com/ekhontv/index.m3u8?e=1779714083&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=09f4925df19ca787b174402dfe64cc0f",
       "group_title": "News",
       "region": "BD"
     },
@@ -3025,7 +3025,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/e86c14566b4d5b6dd68ac37dce4f6043",
-      "url": "https://tvsen5.aynaott.com/banglavision/index.m3u8?e=1779697525&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=efd5cab17d7e7ecdccd25c405da55041",
+      "url": "https://tvsen5.aynaott.com/banglavision/index.m3u8?e=1779714084&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=6260b385ab5239bf940b34e0a63e52f6",
       "group_title": "Entertainment",
       "region": "BD"
     },
@@ -3050,7 +3050,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/a9517064cd265264a1e94945be044152",
-      "url": "https://tvsen6.aynaott.com/AbcNews/index.m3u8?e=1779697524&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=4a23a174a08361ce6a2849997ee5c445",
+      "url": "https://tvsen6.aynaott.com/AbcNews/index.m3u8?e=1779714085&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=22f8d28946d79e3fe6102f874de1f091",
       "group_title": "News",
       "region": "US"
     },
@@ -3075,7 +3075,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/1fff0595da9963d1faf78a70126ce688",
-      "url": "https://tvsen7.aynaott.com/TaazaTV/index.m3u8?e=1779697526&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=8fc48b868fbe89d514fdb5908db47fed",
+      "url": "https://tvsen7.aynaott.com/TaazaTV/index.m3u8?e=1779714085&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=f8f6414bdf5ea1bdd0f70c57cec5f5e0",
       "group_title": "News",
       "region": "IN"
     },
@@ -3100,7 +3100,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/2635af4f0f6ad398e4f1903c48818bb9",
-      "url": "https://tvsen7.aynaott.com/MadaniTV/index.m3u8?e=1779697526&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=54b4a218614708d64dd2b50c56a93883",
+      "url": "https://tvsen7.aynaott.com/MadaniTV/index.m3u8?e=1779714085&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=4f9ce7e380b16dce52cc5a3776828af3",
       "group_title": "Religious",
       "region": "PK"
     },
@@ -3125,7 +3125,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/072dcedd6c65b98d813ab23641f28255",
-      "url": "https://tvsen6.aynaott.com/ytv/index.m3u8?e=1779697527&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=e068b79183b59a062116d0376c1a723d",
+      "url": "https://tvsen6.aynaott.com/ytv/index.m3u8?e=1779714087&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=cc089c3be18f5ce50f647345acceec54",
       "group_title": "Kids",
       "region": "INT"
     },
@@ -3150,7 +3150,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/7872e438f032c00fb8699fe7e57a5dc9",
-      "url": "https://tvsen7.aynaott.com/nicklodean/index.m3u8?e=1779697527&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=fff081284abf3d02448203ca89f38f49",
+      "url": "https://tvsen7.aynaott.com/nicklodean/index.m3u8?e=1779714087&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=4f378f568715990943315b817020846e",
       "group_title": "Kids",
       "region": "US"
     },
@@ -3175,7 +3175,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/26da9dc3da3c13a1b8476af11a934105",
-      "url": "https://tvsen7.aynaott.com/teennick/index.m3u8?e=1779697528&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=2d3c065614f3fe59cf14b5dffc00b5e4",
+      "url": "https://tvsen7.aynaott.com/teennick/index.m3u8?e=1779714087&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=053a2b96cd10542d39b3bcf98a2ae547",
       "group_title": "Kids",
       "region": "US"
     },
@@ -3200,7 +3200,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/750b284beb0b3639790dbc183b008901",
-      "url": "https://tvsen7.aynaott.com/disney/index.m3u8?e=1779697528&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=6bfa04854e32cae4d7741adaa7461b7f",
+      "url": "https://tvsen7.aynaott.com/disney/index.m3u8?e=1779714088&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=b8c2caafde784655f06d52ac604df3b5",
       "group_title": "Kids",
       "region": "US"
     },
@@ -3225,7 +3225,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/0474144be69d57b0cabcb3245f032404",
-      "url": "https://tvsen6.aynaott.com/PeaceTVUrduHD/index.m3u8?e=1779697529&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=8cec2b7eab982562891178d9b503ffbb",
+      "url": "https://tvsen6.aynaott.com/PeaceTVUrduHD/index.m3u8?e=1779714089&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=8c212fe0af51c1fba28721e00adade4a",
       "group_title": "Religious",
       "region": "PK"
     },
@@ -3250,7 +3250,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/c0b4732867d1b1b8d0ff8326073be46f",
-      "url": "https://tvsen7.aynaott.com/PeaceTvBanglaHD/index.m3u8?e=1779697529&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=2e83c777a5b1884230c238107a2ec95b",
+      "url": "https://tvsen7.aynaott.com/PeaceTvBanglaHD/index.m3u8?e=1779714089&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=537548dfdea07ef18c0d8dbd290dfeb1",
       "group_title": "Religious",
       "region": "BD"
     },
@@ -3275,7 +3275,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/803873850322e0ecd7fe606ba4fd114f",
-      "url": "https://tvsen6.aynaott.com/ANB_News/index.m3u8?e=1779697530&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=17499f7f76f6a0c920eca0b56dcac9a3",
+      "url": "https://tvsen6.aynaott.com/ANB_News/index.m3u8?e=1779714090&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=c4fbbf4d4ae39b5d35f15d2e680b6672",
       "group_title": "News",
       "region": "IN"
     },
@@ -3375,7 +3375,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/a756b8c8a5f6cf65140f84ee26cfedf8",
-      "url": "https://tvsen6.aynaott.com/RDSSocialTV/index.m3u8?e=1779697532&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=4cda989d7ae28affa09c5988f37f4a85",
+      "url": "https://tvsen6.aynaott.com/RDSSocialTV/index.m3u8?e=1779714093&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=e3e58e30f1007deef544a4867b21fadf",
       "group_title": "Music",
       "region": "INT"
     },
@@ -3400,7 +3400,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/9b417f8a796216ce10c12ad10bb8ff05",
-      "url": "https://tvsen6.aynaott.com/MoonbugKids/index.m3u8?e=1779697533&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=135c68e1368faa6a2ed8cbd49ad1e1b3",
+      "url": "https://tvsen6.aynaott.com/MoonbugKids/index.m3u8?e=1779714093&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=d8fbc3bfb1fdcd16c798e3d6e984fa09",
       "group_title": "Kids",
       "region": "INT"
     },
@@ -3450,7 +3450,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/f4390c1bba69689aba959b0ca52505c3",
-      "url": "https://tvsen6.aynaott.com/nhkworld/index.m3u8?e=1779697534&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=67e54e5d3e73411f2acc1df0f5ace42e",
+      "url": "https://tvsen6.aynaott.com/nhkworld/index.m3u8?e=1779714095&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=7936f78db63f05e287b095c4b9f6515a",
       "group_title": "News",
       "region": "INT"
     },
@@ -3525,7 +3525,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/2379c1a7c685f7ca6a096bbf1c95aab1",
-      "url": "https://tvsen6.aynaott.com/islam/index.m3u8?e=1779697535&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=46127ac61fa121cd4430044864cbc557",
+      "url": "https://tvsen6.aynaott.com/islam/index.m3u8?e=1779714097&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=33f58227bbb3d6a8e94ff3a5166bea20",
       "group_title": "Religious",
       "region": "INT"
     },
@@ -3550,7 +3550,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/e8fe46b5eefb932bed78ddb9c1417d4f",
-      "url": "https://tvsen6.aynaott.com/MarqueeSportsNetwork/index.m3u8?e=1779697537&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=7c4d2cd32d51af571bfbd9348f64b2c4",
+      "url": "https://tvsen6.aynaott.com/MarqueeSportsNetwork/index.m3u8?e=1779714097&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=51f71e75dae8776a4105b87e3bbd007f",
       "group_title": "Sports",
       "region": "US"
     },
@@ -3575,7 +3575,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/de9c2811171652e1a43333c7b06da8d4",
-      "url": "https://tvsen7.aynaott.com/tsn2/index.m3u8?e=1779697537&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=0b83c94e5a213c8872f542a7b887f324",
+      "url": "https://tvsen7.aynaott.com/tsn2/index.m3u8?e=1779714098&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=1b2e3601351a23f65e9f6bf90617b476",
       "group_title": "Sports",
       "region": "INT"
     },
@@ -3600,7 +3600,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/8a8cfe3e65e5867f60dac376b1ffa2b5",
-      "url": "https://tvsen5.aynaott.com/espn/index.m3u8?e=1779697538&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=88bd7f3f10f4d73849c6ebbf819b37ec",
+      "url": "https://tvsen5.aynaott.com/espn/index.m3u8?e=1779714098&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=4bb037a745127615391d935470f3ab77",
       "group_title": "Sports",
       "region": "US"
     },
@@ -3625,7 +3625,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/e8f773bfe8eb0881969d7b7a86e8db73",
-      "url": "https://tvsen5.aynaott.com/PtvSports/index.m3u8?e=1779697538&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=47fe3797a4d8c7a4cbf59e2d36dab3a4",
+      "url": "https://tvsen5.aynaott.com/PtvSports/index.m3u8?e=1779714100&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=7fa9e5d9ec55aa0be6e023eb33ac2069",
       "group_title": "Sports",
       "region": "INT"
     },
@@ -3650,7 +3650,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/225c955ff4174c976ab01d7214b3f28f",
-      "url": "https://tvsen6.aynaott.com/anandatv/index.m3u8?e=1779697539&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=4d813ce2b9d5a425694829befb7adb82",
+      "url": "https://tvsen6.aynaott.com/anandatv/index.m3u8?e=1779714099&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=9d9e7e53a40cc5f786cedc5f3037ed9d",
       "group_title": "Entertainment",
       "region": "BD"
     },
@@ -3675,7 +3675,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/ee4466e6b775bf83f4f5a90a1dc89234",
-      "url": "https://tvsen6.aynaott.com/independenttv/index.m3u8?e=1779697539&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=1f8269989423e8ae73df0496febac3f6",
+      "url": "https://tvsen6.aynaott.com/independenttv/index.m3u8?e=1779714100&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=2c5384196b8387c3a0ed866749f2e877",
       "group_title": "News",
       "region": "BD"
     },
@@ -3725,7 +3725,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/3dfef9c749495740ac0ee09d2545f042",
-      "url": "https://tvsen6.aynaott.com/Dangal/index.m3u8?e=1779697541&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=4e81fa75f5a0ef85206f9295a41d7a45",
+      "url": "https://tvsen6.aynaott.com/Dangal/index.m3u8?e=1779714102&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=7696bf7e42f2144774fc04d47dda741f",
       "group_title": "Entertainment",
       "region": "IN"
     },
@@ -3750,7 +3750,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/21907b1a47756836d50d451a5739aa78",
-      "url": "https://tvsen7.aynaott.com/epix/index.m3u8?e=1779697541&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=c2f6cf3b6c74a4a2121715599944a5d2",
+      "url": "https://tvsen7.aynaott.com/epix/index.m3u8?e=1779714102&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=672a2fb4d2fd339218c4ffc5c440363c",
       "group_title": "Movies",
       "region": "US"
     },
@@ -3775,7 +3775,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/1dde08de367f28f0934af20310cc8d13",
-      "url": "https://tvsen6.aynaott.com/9X_Tashan/index.m3u8?e=1779697542&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=3aff2a67614408c15715a004fa63931e",
+      "url": "https://tvsen6.aynaott.com/9X_Tashan/index.m3u8?e=1779714102&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=8f02a2912700060405b8d796563374e6",
       "group_title": "Music",
       "region": "IN"
     },
@@ -3800,7 +3800,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/752bf7ab5d6c8b76e93544ab9aa100f3",
-      "url": "https://tvsen7.aynaott.com/HindiKhabar/index.m3u8?e=1779697542&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=78b051e63840e2d8d4c684a1740eca33",
+      "url": "https://tvsen7.aynaott.com/HindiKhabar/index.m3u8?e=1779714103&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=bd35b776447760a096742de04b405304",
       "group_title": "News",
       "region": "IN"
     },
@@ -3825,7 +3825,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/128d0977af19a75a7fa3207f6808ed97",
-      "url": "https://tvsen5.aynaott.com/skynews/index.m3u8?e=1779697543&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=d1d127b999e4c7fdbf1acfddae3392a8",
+      "url": "https://tvsen5.aynaott.com/skynews/index.m3u8?e=1779714104&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=3822dca4a3916294cdc0fd1dc50e47b0",
       "group_title": "News",
       "region": "UK"
     },
@@ -3850,7 +3850,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/1519c2d5dc918d992b1ff360a53910cb",
-      "url": "https://tvsen6.aynaott.com/ManoranjanTV/index.m3u8?e=1779697543&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=0beaaf93d9d3ad5467ad67671275714e",
+      "url": "https://tvsen6.aynaott.com/ManoranjanTV/index.m3u8?e=1779714105&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=5ed37ca5363008305ad4b530a4f02c29",
       "group_title": "Entertainment",
       "region": "IN"
     },
@@ -4798,7 +4798,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/48ae72c175b5555a48ba9c45af51e3c9",
-      "url": "https://tvsen6.aynaott.com/BTVNews/index.m3u8?e=1779697566&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=e896ed16d4cd1ce990383b49b0956b08",
+      "url": "https://tvsen6.aynaott.com/BTVNews/index.m3u8?e=1779714129&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=ce2ad4b3a2cc0d9645f167ef0ddde647",
       "group_title": "News",
       "region": "BD"
     },
@@ -4848,7 +4848,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/cd137cbfaafe98abb3d8a4637b762b89",
-      "url": "https://tvsen6.aynaott.com/bbcnews/index.m3u8?e=1779697567&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=2624c0cc6b4e47d27edd5997429f95f5",
+      "url": "https://tvsen6.aynaott.com/bbcnews/index.m3u8?e=1779714130&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=e7bcc6922e94037b80c6cc41279ea2f2",
       "group_title": "News",
       "region": "UK"
     },
@@ -4898,7 +4898,7 @@
       "status": "available",
       "favorite": false,
       "logo": "https://s3.aynaott.com/storage/3b9c7a7c30e8e68e26780f7d5ba2c2cb",
-      "url": "https://tvsen6.aynaott.com/GreenTvHD/index.m3u8?e=1779697568&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=e69345538c831aeea1e41dd0f65ded0d",
+      "url": "https://tvsen6.aynaott.com/GreenTvHD/index.m3u8?e=1779714131&u=d27fee88-5b4c-44f1-bd8b-9db030eff3a2&token=1602de12a3f374eb3d988979acfb53de",
       "group_title": "Entertainment",
       "region": "PK"
     },
@@ -5003,5 +5003,5 @@
       "region": "INT"
     }
   ],
-  "last_updated": "2026-05-25T06:26:10.175869"
+  "last_updated": "2026-05-25T11:02:13.897429"
 }

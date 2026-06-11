@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-06-11T23:39:41.670922+06:00",
+  "created_at": "2026-06-12T02:03:21.879735+06:00",
   "disclaimer": "We do not host or serve any content. All channels and streams listed are publicly available from third-party providers.",
-  "total_channels": 200,
+  "total_channels": 199,
   "server_total_reported": null,
   "channels": [
     {
@@ -1103,31 +1103,6 @@
       "url": "",
       "group_title": "News",
       "region": "US"
-    },
-    {
-      "id": "fc95d30e-5323-4c12-bb38-7a1e3f04acc2",
-      "title": "T Sports HD",
-      "ageLimit": 0,
-      "image": "https://s3.aynaott.com/storage/9fbf3e9ed22c8cc71c93f25d6cb9be32",
-      "landscapeImage": "https://s3.aynaott.com/storage/5061b1c2cc09e790408893c840d53d6f",
-      "available": false,
-      "timeShiftLength": 604800,
-      "npvrAvailable": false,
-      "epgDuration": 86400,
-      "keyCode": 10,
-      "planIds": [
-        "b7e1310f-4f47-4800-aa0b-a01f9956100a",
-        "8118aff4-7fb0-4bd2-bd71-4a95427beb65",
-        "322cc1d7-296b-4d3e-938e-1f70752d3f9a"
-      ],
-      "connectionStatus": true,
-      "purchased": false,
-      "status": "notPurchased",
-      "favorite": false,
-      "logo": "https://s3.aynaott.com/storage/9fbf3e9ed22c8cc71c93f25d6cb9be32",
-      "url": "",
-      "group_title": "Sports",
-      "region": "BD"
     },
     {
       "id": "abfabaee-3898-4279-8645-3da5b0232867",
@@ -5003,5 +4978,5 @@
       "region": "INT"
     }
   ],
-  "last_updated": "2026-06-11T17:39:41.670934"
+  "last_updated": "2026-06-11T20:03:21.879747"
 }

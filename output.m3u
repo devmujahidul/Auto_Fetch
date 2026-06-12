@@ -596,3 +596,9 @@ https://streamer.bdstream.site/get-stream/79c26f90-3a3e-43eb-9173-1c78bbbd5013
 
 #EXTINF:-1 tvg-id="4d584583-f231-4b37-b634-0f92046da57b" tvg-name="Star News" tvg-logo="https://s3.aynaott.com/storage/fa10f6a102bf5d73a466f3f51b95ab91" group-title="News" region="INT", Star News
 https://streamer.bdstream.site/get-stream/4d584583-f231-4b37-b634-0f92046da57b
+
+#EXTINF:-1 tvg-id="e9943a0d-a64f-4da6-9a12-023d604dc6b1" tvg-name="Unite8 Sports 2" tvg-logo="https://s3.aynaott.com/storage/a4428bd3c0ebb8b6425e36a0c0d61546" group-title="Sports" region="INT", Unite8 Sports 2
+https://streamer.bdstream.site/get-stream/e9943a0d-a64f-4da6-9a12-023d604dc6b1
+
+#EXTINF:-1 tvg-id="f27de012-0785-4152-892a-014a497e234e" tvg-name="Unite8 Sports 1" tvg-logo="https://s3.aynaott.com/storage/ae235cfc6f8db4ad864f039aac5b5930" group-title="Sports" region="INT", Unite8 Sports 1
+https://streamer.bdstream.site/get-stream/f27de012-0785-4152-892a-014a497e234e

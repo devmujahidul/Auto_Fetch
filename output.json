@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-06-14T22:44:53.935267+06:00",
+  "created_at": "2026-06-15T00:04:43.149064+06:00",
   "disclaimer": "We do not host or serve any content. All channels and streams listed are publicly available from third-party providers.",
-  "total_channels": 201,
+  "total_channels": 202,
   "server_total_reported": null,
   "channels": [
     {
@@ -5026,7 +5026,32 @@
       "url": "",
       "group_title": "Sports",
       "region": "INT"
+    },
+    {
+      "id": "0a652ee3-b148-46d8-8cea-bed74d997b6c",
+      "title": "FIFA+",
+      "ageLimit": 0,
+      "image": "https://s3.aynaott.com/storage/4435af0e687e3e34f2dcbdc5f5cb27a9",
+      "landscapeImage": "https://s3.aynaott.com/storage/5fbb00470828c87b7219d30cf9ca1bbb",
+      "available": false,
+      "timeShiftLength": 0,
+      "npvrAvailable": false,
+      "epgDuration": 86400,
+      "keyCode": 4002,
+      "planIds": [
+        "b7e1310f-4f47-4800-aa0b-a01f9956100a",
+        "8118aff4-7fb0-4bd2-bd71-4a95427beb65",
+        "322cc1d7-296b-4d3e-938e-1f70752d3f9a"
+      ],
+      "connectionStatus": true,
+      "purchased": false,
+      "status": "notPurchased",
+      "favorite": false,
+      "logo": "https://s3.aynaott.com/storage/4435af0e687e3e34f2dcbdc5f5cb27a9",
+      "url": "",
+      "group_title": "Sports",
+      "region": "INT"
     }
   ],
-  "last_updated": "2026-06-14T16:44:53.935282"
+  "last_updated": "2026-06-14T18:04:43.149079"
 }

@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-06-15T20:51:58.316176+06:00",
+  "created_at": "2026-06-16T00:58:39.901528+06:00",
   "disclaimer": "We do not host or serve any content. All channels and streams listed are publicly available from third-party providers.",
-  "total_channels": 202,
+  "total_channels": 203,
   "server_total_reported": null,
   "channels": [
     {
@@ -5051,7 +5051,31 @@
       "url": "",
       "group_title": "Sports",
       "region": "INT"
+    },
+    {
+      "id": "c340967c-47cc-44c1-9cda-8e1b7a16234f",
+      "title": "Z Bangla Sonar",
+      "ageLimit": 0,
+      "image": "https://s3.aynaott.com/storage/caed5239ee01cd41112a55e6169de67b",
+      "landscapeImage": "https://s3.aynaott.com/storage/83d0449b805c46d1634c4ceebc7c220d",
+      "available": false,
+      "timeShiftLength": 0,
+      "npvrAvailable": false,
+      "epgDuration": 86400,
+      "planIds": [
+        "b7e1310f-4f47-4800-aa0b-a01f9956100a",
+        "8118aff4-7fb0-4bd2-bd71-4a95427beb65",
+        "322cc1d7-296b-4d3e-938e-1f70752d3f9a"
+      ],
+      "connectionStatus": true,
+      "purchased": false,
+      "status": "notPurchased",
+      "favorite": false,
+      "logo": "https://s3.aynaott.com/storage/caed5239ee01cd41112a55e6169de67b",
+      "url": "",
+      "group_title": "Unknown",
+      "region": "BD"
     }
   ],
-  "last_updated": "2026-06-15T14:51:58.316198"
+  "last_updated": "2026-06-15T18:58:39.901555"
 }

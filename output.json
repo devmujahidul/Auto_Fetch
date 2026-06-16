@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-06-17T00:24:15.054419+06:00",
+  "created_at": "2026-06-17T03:38:22.647203+06:00",
   "disclaimer": "We do not host or serve any content. All channels and streams listed are publicly available from third-party providers.",
-  "total_channels": 203,
+  "total_channels": 204,
   "server_total_reported": null,
   "channels": [
     {
@@ -2203,6 +2203,31 @@
       "url": "",
       "group_title": "Entertainment",
       "region": "US"
+    },
+    {
+      "id": "ff14d64f-0fcb-45af-8313-9ae3ff788052",
+      "title": "Zee Bangla Sonar",
+      "ageLimit": 0,
+      "image": "https://s3.aynaott.com/storage/c1a4fef16e850e8ebe162070f5d41608",
+      "landscapeImage": "https://s3.aynaott.com/storage/f02909ad03a2606d447e60f2d49df91a",
+      "available": false,
+      "timeShiftLength": 0,
+      "npvrAvailable": false,
+      "epgDuration": 86400,
+      "keyCode": 69,
+      "planIds": [
+        "b7e1310f-4f47-4800-aa0b-a01f9956100a",
+        "8118aff4-7fb0-4bd2-bd71-4a95427beb65",
+        "322cc1d7-296b-4d3e-938e-1f70752d3f9a"
+      ],
+      "connectionStatus": true,
+      "purchased": false,
+      "status": "notPurchased",
+      "favorite": false,
+      "logo": "https://s3.aynaott.com/storage/c1a4fef16e850e8ebe162070f5d41608",
+      "url": "",
+      "group_title": "Entertainment",
+      "region": "IN"
     },
     {
       "id": "30c01099-08c9-45d3-91b2-572ca4c173eb",
@@ -5077,5 +5102,5 @@
       "region": "BD"
     }
   ],
-  "last_updated": "2026-06-16T18:24:15.054436"
+  "last_updated": "2026-06-16T21:38:22.647220"
 }

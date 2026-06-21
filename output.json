@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-06-21T21:32:42.084733+06:00",
+  "created_at": "2026-06-21T23:15:30.526380+06:00",
   "disclaimer": "We do not host or serve any content. All channels and streams listed are publicly available from third-party providers.",
-  "total_channels": 203,
+  "total_channels": 202,
   "server_total_reported": null,
   "channels": [
     {
@@ -5003,31 +5003,6 @@
       "region": "INT"
     },
     {
-      "id": "f27de012-0785-4152-892a-014a497e234e",
-      "title": "Unite8 Sports 1",
-      "ageLimit": 0,
-      "image": "https://s3.aynaott.com/storage/ae235cfc6f8db4ad864f039aac5b5930",
-      "landscapeImage": "https://s3.aynaott.com/storage/00bb4bdc00f323171815dec125d5d3f3",
-      "available": false,
-      "timeShiftLength": 0,
-      "npvrAvailable": false,
-      "epgDuration": 86400,
-      "keyCode": 399,
-      "planIds": [
-        "b7e1310f-4f47-4800-aa0b-a01f9956100a",
-        "8118aff4-7fb0-4bd2-bd71-4a95427beb65",
-        "322cc1d7-296b-4d3e-938e-1f70752d3f9a"
-      ],
-      "connectionStatus": true,
-      "purchased": false,
-      "status": "notPurchased",
-      "favorite": false,
-      "logo": "https://s3.aynaott.com/storage/ae235cfc6f8db4ad864f039aac5b5930",
-      "url": "",
-      "group_title": "Sports",
-      "region": "INT"
-    },
-    {
       "id": "ca3fc4a9-af30-4a81-b915-239d8f975a85",
       "title": "Bein Sports 1",
       "ageLimit": 0,
@@ -5078,5 +5053,5 @@
       "region": "INT"
     }
   ],
-  "last_updated": "2026-06-21T15:32:42.084749"
+  "last_updated": "2026-06-21T17:15:30.526393"
 }

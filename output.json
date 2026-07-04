@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-07-04T17:59:46.087174+06:00",
+  "created_at": "2026-07-04T19:38:35.840993+06:00",
   "disclaimer": "We do not host or serve any content. All channels and streams listed are publicly available from third-party providers.",
-  "total_channels": 203,
+  "total_channels": 205,
   "server_total_reported": null,
   "channels": [
     {
@@ -2005,6 +2005,31 @@
       "region": "US"
     },
     {
+      "id": "1f8a84b3-8079-4c29-9e73-f219664e9d4d",
+      "title": "Goldmines Movies",
+      "ageLimit": 0,
+      "image": "https://s3.aynaott.com/storage/26c1570891267164e40563806b25ccdb",
+      "landscapeImage": "https://s3.aynaott.com/storage/de7dfa205193ab8d42773d15a2e94482",
+      "available": false,
+      "timeShiftLength": 0,
+      "npvrAvailable": false,
+      "epgDuration": 86400,
+      "keyCode": 220,
+      "planIds": [
+        "b7e1310f-4f47-4800-aa0b-a01f9956100a",
+        "8118aff4-7fb0-4bd2-bd71-4a95427beb65",
+        "322cc1d7-296b-4d3e-938e-1f70752d3f9a"
+      ],
+      "connectionStatus": true,
+      "purchased": false,
+      "status": "notPurchased",
+      "favorite": false,
+      "logo": "https://s3.aynaott.com/storage/26c1570891267164e40563806b25ccdb",
+      "url": "",
+      "group_title": "Movies",
+      "region": "IN"
+    },
+    {
       "id": "9b1539aa-d73b-4310-8809-d44b37995e6d",
       "title": "Channel Win",
       "ageLimit": 0,
@@ -3003,6 +3028,31 @@
       "url": "",
       "group_title": "Entertainment",
       "region": "BD"
+    },
+    {
+      "id": "c7f57cda-5a87-48c5-a758-4273db0864d2",
+      "title": "Goldmines",
+      "ageLimit": 0,
+      "image": "https://s3.aynaott.com/storage/d6dd2e3ffede99b3f1d7d4fb8f5061a5",
+      "landscapeImage": "https://s3.aynaott.com/storage/4c5f3f0a8449c89ef0df6696619a60e3",
+      "available": false,
+      "timeShiftLength": 0,
+      "npvrAvailable": false,
+      "epgDuration": 86400,
+      "keyCode": 219,
+      "planIds": [
+        "b7e1310f-4f47-4800-aa0b-a01f9956100a",
+        "8118aff4-7fb0-4bd2-bd71-4a95427beb65",
+        "322cc1d7-296b-4d3e-938e-1f70752d3f9a"
+      ],
+      "connectionStatus": true,
+      "purchased": false,
+      "status": "notPurchased",
+      "favorite": false,
+      "logo": "https://s3.aynaott.com/storage/d6dd2e3ffede99b3f1d7d4fb8f5061a5",
+      "url": "",
+      "group_title": "Movies",
+      "region": "IN"
     },
     {
       "id": "50e2fe7f-fa1d-40ee-b37d-c19a992ed97c",
@@ -5078,5 +5128,5 @@
       "region": "INT"
     }
   ],
-  "last_updated": "2026-07-04T11:59:46.087190"
+  "last_updated": "2026-07-04T13:38:35.841009"
 }

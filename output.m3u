@@ -240,6 +240,9 @@ https://streamer.bdstream.site/get-stream/353f1b20-3f65-4477-8251-6c3c58a3a12e
 #EXTINF:-1 tvg-id="a5e00efc-bb52-4e9f-9726-a256ffbf7397" tvg-name="AMC TV" tvg-logo="https://s3.aynaott.com/storage/83774f423a5661d9456601fb7c7164e3" group-title="Movies" region="US", AMC TV
 https://streamer.bdstream.site/get-stream/a5e00efc-bb52-4e9f-9726-a256ffbf7397
 
+#EXTINF:-1 tvg-id="1f8a84b3-8079-4c29-9e73-f219664e9d4d" tvg-name="Goldmines Movies" tvg-logo="https://s3.aynaott.com/storage/26c1570891267164e40563806b25ccdb" group-title="Movies" region="IN", Goldmines Movies
+https://streamer.bdstream.site/get-stream/1f8a84b3-8079-4c29-9e73-f219664e9d4d
+
 #EXTINF:-1 tvg-id="9b1539aa-d73b-4310-8809-d44b37995e6d" tvg-name="Channel Win" tvg-logo="https://s3.aynaott.com/storage/74482456eb20e9afa811293a6efcc703" group-title="Entertainment" region="BD", Channel Win
 https://streamer.bdstream.site/get-stream/9b1539aa-d73b-4310-8809-d44b37995e6d
 
@@ -359,6 +362,9 @@ https://streamer.bdstream.site/get-stream/b80579f2-22d3-4b12-881e-60139810a791
 
 #EXTINF:-1 tvg-id="21e75798-3b6a-4214-9d93-b3fecaa4e700" tvg-name="Bangla Vision" tvg-logo="https://s3.aynaott.com/storage/e86c14566b4d5b6dd68ac37dce4f6043" group-title="Entertainment" region="BD", Bangla Vision
 https://streamer.bdstream.site/get-stream/21e75798-3b6a-4214-9d93-b3fecaa4e700
+
+#EXTINF:-1 tvg-id="c7f57cda-5a87-48c5-a758-4273db0864d2" tvg-name="Goldmines" tvg-logo="https://s3.aynaott.com/storage/d6dd2e3ffede99b3f1d7d4fb8f5061a5" group-title="Movies" region="IN", Goldmines
+https://streamer.bdstream.site/get-stream/c7f57cda-5a87-48c5-a758-4273db0864d2
 
 #EXTINF:-1 tvg-id="50e2fe7f-fa1d-40ee-b37d-c19a992ed97c" tvg-name="ABC News" tvg-logo="https://s3.aynaott.com/storage/a9517064cd265264a1e94945be044152" group-title="News" region="US", ABC News
 https://streamer.bdstream.site/get-stream/50e2fe7f-fa1d-40ee-b37d-c19a992ed97c

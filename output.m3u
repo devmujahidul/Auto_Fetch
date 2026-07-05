@@ -102,6 +102,9 @@ https://streamer.bdstream.site/get-stream/dc4a5da2-9423-4c3a-ac8e-62086ff7b6f1
 #EXTINF:-1 tvg-id="a57241fe-02b1-4a39-a602-84a57622be6c" tvg-name="TNT Sport 1" tvg-logo="https://s3.aynaott.com/storage/4d7d15dd5a6b8bbe5b43bdf7598bf831" group-title="Sports" region="UK", TNT Sport 1
 https://streamer.bdstream.site/get-stream/a57241fe-02b1-4a39-a602-84a57622be6c
 
+#EXTINF:-1 tvg-id="a787feb3-0d50-41ad-9d43-f2cc02fada70" tvg-name="The Q" tvg-logo="https://s3.aynaott.com/storage/bcb9a31947ba4e5229e1148404a50d58" group-title="Entertainment" region="IN", The Q
+https://streamer.bdstream.site/get-stream/a787feb3-0d50-41ad-9d43-f2cc02fada70
+
 #EXTINF:-1 tvg-id="7141c05b-97cd-4dd1-9584-423c7a5ce13d" tvg-name="Republic Bangla" tvg-logo="https://s3.aynaott.com/storage/68f655a765e55c45ef9d086cec71606c" group-title="News" region="IN", Republic Bangla
 https://streamer.bdstream.site/get-stream/7141c05b-97cd-4dd1-9584-423c7a5ce13d
 
@@ -374,6 +377,9 @@ https://streamer.bdstream.site/get-stream/f9f17a87-2cef-4639-9788-f26422ac7fbe
 
 #EXTINF:-1 tvg-id="32acaaeb-2b3b-4979-98d9-b45deecde3ec" tvg-name="MADANI TV" tvg-logo="https://s3.aynaott.com/storage/2635af4f0f6ad398e4f1903c48818bb9" group-title="Religious" region="PK", MADANI TV
 https://streamer.bdstream.site/get-stream/32acaaeb-2b3b-4979-98d9-b45deecde3ec
+
+#EXTINF:-1 tvg-id="31e02282-4cac-4747-ac93-bd74be3c78d5" tvg-name="Dangal 2" tvg-logo="https://s3.aynaott.com/storage/cbf4f321a1a024c8a240a6d477125e93" group-title="Entertainment" region="IN", Dangal 2
+https://streamer.bdstream.site/get-stream/31e02282-4cac-4747-ac93-bd74be3c78d5
 
 #EXTINF:-1 tvg-id="7c972a23-cee8-47f0-b61a-ac15d57002e4" tvg-name="YTV" tvg-logo="https://s3.aynaott.com/storage/072dcedd6c65b98d813ab23641f28255" group-title="Kids" region="INT", YTV
 https://streamer.bdstream.site/get-stream/7c972a23-cee8-47f0-b61a-ac15d57002e4

@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-07-05T11:49:49.312455+06:00",
+  "created_at": "2026-07-05T14:34:42.437748+06:00",
   "disclaimer": "We do not host or serve any content. All channels and streams listed are publicly available from third-party providers.",
-  "total_channels": 205,
+  "total_channels": 207,
   "server_total_reported": null,
   "channels": [
     {
@@ -853,6 +853,31 @@
       "url": "",
       "group_title": "Sports",
       "region": "UK"
+    },
+    {
+      "id": "a787feb3-0d50-41ad-9d43-f2cc02fada70",
+      "title": "The Q",
+      "ageLimit": 0,
+      "image": "https://s3.aynaott.com/storage/bcb9a31947ba4e5229e1148404a50d58",
+      "landscapeImage": "https://s3.aynaott.com/storage/1f37111a6adfcb903efc0db45e7c6b4e",
+      "available": false,
+      "timeShiftLength": 0,
+      "npvrAvailable": false,
+      "epgDuration": 86400,
+      "keyCode": 227,
+      "planIds": [
+        "b7e1310f-4f47-4800-aa0b-a01f9956100a",
+        "8118aff4-7fb0-4bd2-bd71-4a95427beb65",
+        "322cc1d7-296b-4d3e-938e-1f70752d3f9a"
+      ],
+      "connectionStatus": true,
+      "purchased": false,
+      "status": "notPurchased",
+      "favorite": false,
+      "logo": "https://s3.aynaott.com/storage/bcb9a31947ba4e5229e1148404a50d58",
+      "url": "",
+      "group_title": "Entertainment",
+      "region": "IN"
     },
     {
       "id": "7141c05b-97cd-4dd1-9584-423c7a5ce13d",
@@ -3130,6 +3155,31 @@
       "region": "PK"
     },
     {
+      "id": "31e02282-4cac-4747-ac93-bd74be3c78d5",
+      "title": "Dangal 2",
+      "ageLimit": 0,
+      "image": "https://s3.aynaott.com/storage/cbf4f321a1a024c8a240a6d477125e93",
+      "landscapeImage": "https://s3.aynaott.com/storage/ee39f82d6c401d04a408732ed163cfc7",
+      "available": false,
+      "timeShiftLength": 0,
+      "npvrAvailable": false,
+      "epgDuration": 86400,
+      "keyCode": 223,
+      "planIds": [
+        "b7e1310f-4f47-4800-aa0b-a01f9956100a",
+        "8118aff4-7fb0-4bd2-bd71-4a95427beb65",
+        "322cc1d7-296b-4d3e-938e-1f70752d3f9a"
+      ],
+      "connectionStatus": true,
+      "purchased": false,
+      "status": "notPurchased",
+      "favorite": false,
+      "logo": "https://s3.aynaott.com/storage/cbf4f321a1a024c8a240a6d477125e93",
+      "url": "",
+      "group_title": "Entertainment",
+      "region": "IN"
+    },
+    {
       "id": "7c972a23-cee8-47f0-b61a-ac15d57002e4",
       "title": "YTV",
       "ageLimit": 0,
@@ -5128,5 +5178,5 @@
       "region": "INT"
     }
   ],
-  "last_updated": "2026-07-05T05:49:49.312471"
+  "last_updated": "2026-07-05T08:34:42.437760"
 }
